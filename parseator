@@ -1,0 +1,21 @@
+#!/bin/bash
+#Intento de script para parsear pruebas en la arquitectura
+
+
+while getopts "h" opt
+do
+	case $opt in
+	h) echo "Usage: First argument should be the config file, and the results files must be in the current directory"
+	esac
+done
+#while read line
+# do echo -e "$line"
+#done < $1
+CONFIG=$1
+SEARCH=*results*
+for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+do
+	grep $a $SEARCH>>temp
+	
+	echo -n " ">>temp
+done
