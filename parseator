@@ -14,9 +14,11 @@ done
 CONFIG=$1
 SEARCH=*results*
 for result in $SEARCH
-for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
 do
-	grep $a $SEARCH>>temp
-	
-	echo -n " ">>temp
+	for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+	do
+		grep  $a $result>>temp1
+	done
 done
+cat temp1 | tr -d '\n' > temp2
+rm temp1
