@@ -8,21 +8,19 @@ do
 	h) echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
 	esac
 done
-#while read line
-# do echo -e "$line"
-#done < $1
 CONFIG=$1
 SEARCH=*results*
 for result in $SEARCH
 do
 	echo  $result >temp
-	echo  $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')>>temp
 	for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
 	do
-		grep  $a $result|sed -e "s/$a://g" >> temp2
+		echo $a >cabecera
+		grep  $a $result|sed -e "s/$a://g" > temp2
+		cat cabecera temp2 > temp3
+		cat temp3| tr -d '\n' >> temp4
+		echo >> temp4
 	done
-	cat temp2| tr -d '\n' > temp3
-	cat temp temp3 >> final
-	rm temp2
+	cat temp temp4 >> final
+	rm temp* cabecera
 done
-rm temp*
