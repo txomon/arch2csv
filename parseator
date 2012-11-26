@@ -5,7 +5,7 @@
 while getopts "h" opt
 do
 	case $opt in
-	h) echo "Usage: First argument should be the config file, and the results files must be in the current directory"
+	h) echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
 	esac
 done
 #while read line
@@ -15,10 +15,14 @@ CONFIG=$1
 SEARCH=*results*
 for result in $SEARCH
 do
+	echo  $result >temp
+	echo  $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')>>temp
 	for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
 	do
-		grep  $a $result>>temp1
+		grep  $a $result|sed -e "s/$a://g" >> temp2
 	done
+	cat temp2| tr -d '\n' > temp3
+	cat temp temp3 >> final
+	rm temp2
 done
-cat temp1 | tr -d '\n' > temp2
-rm temp1
+rm temp*
