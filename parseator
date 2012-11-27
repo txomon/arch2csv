@@ -1,28 +1,31 @@
 #!/bin/bash
 #Intento de script para parsear pruebas en la arquitectura
 
-
+HELP=0
 while getopts "h" opt
 do
 	case $opt in
-	h) echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
+	h) echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory. A recent version of libxml2 library is needed to use xmllint with --xpath option"
+	HELP=1;;
 	esac
 done
-CONFIG=$1
-SEARCH=*results*
-mkdir resultados
-for result in $SEARCH
-do
-	echo  $result >temp
-	for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
-	do
-		echo $a >cabecera
-		grep  $a $result|sed -e "s/$a://g" > temp2
-		cat cabecera temp2 > temp3
-		cat temp3| tr -d '\n' >> temp4
-		echo >> temp4
-	done
-	cat temp temp4 >> resultados/$result
-	cat temp temp4 >> resultados/todas_las_pruebas_juntas
-	rm temp* cabecera
-done
+if [ $HELP -eq 0 ]; then
+	CONFIG=$1
+        SEARCH=*results*
+        mkdir resultados
+        for result in $SEARCH
+        do
+                echo  $result >temp
+                for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+                do
+                        echo $a >cabecera
+                        grep  $a $result|sed -e "s/$a://g" > temp2
+                        cat cabecera temp2 > temp3
+                        cat temp3| tr -d '\n' >> temp4
+                        echo >> temp4
+                done
+                cat temp temp4 >> resultados/$result
+                cat temp temp4 >> resultados/todas_las_pruebas_juntas
+                rm temp* cabecera
+        done
+fi
