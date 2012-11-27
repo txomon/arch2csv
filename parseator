@@ -10,6 +10,7 @@ do
 done
 CONFIG=$1
 SEARCH=*results*
+mkdir resultados
 for result in $SEARCH
 do
 	echo  $result >temp
@@ -21,6 +22,7 @@ do
 		cat temp3| tr -d '\n' >> temp4
 		echo >> temp4
 	done
-	cat temp temp4 >> final
+	cat temp temp4 >> resultados/$result
+	cat temp temp4 >> resultados/todas_las_pruebas_juntas
 	rm temp* cabecera
 done
