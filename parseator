@@ -1,11 +1,14 @@
 #!/bin/bash
 #Intento de script para parsear pruebas en la arquitectura
 
+usage(){
+	echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
+}
 
 while getopts "h" opt
 do
 	case $opt in
-	h) echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
+	h) usage; exit 0;
 	esac
 done
 CONFIG=$1
@@ -13,8 +16,8 @@ SEARCH=*results*
 mkdir resultados
 for result in $SEARCH
 do
-	echo  $result >temp
-	for a in $(xmllint --xpath "//conf/row" $CONFIG|sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+	echo  $result > temp
+	for a in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
 	do
 		echo $a >cabecera
 		grep  $a $result|sed -e "s/$a://g" > temp2
