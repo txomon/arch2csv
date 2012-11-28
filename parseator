@@ -1,31 +1,46 @@
 #!/bin/bash
 #Intento de script para parsear pruebas en la arquitectura
-
+SEARCH=*results*.txt
 usage(){
 	echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
 }
 
-while getopts "h" opt
+TEMP=`getopt -o h --long help \
+     -n "$0" -- "$@"`
+eval set -- "$TEMP"
+while true
 do
-	case $opt in
-	h) usage; exit 0;
+	case "$1" in
+		-h|--help) usage; exit 0;;
+		--) shift; break;;
 	esac
 done
+if [ -z $1 ]; then echo "Falta el archivo de configuración del parseator" && exit 1 ; fi
 CONFIG=$1
-SEARCH=*results*
-mkdir resultados
+mkdir -p resultados
 for result in $SEARCH
 do
-	echo  $result > temp
-	for a in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+	rm -f $result.xml
+	for test in `seq 0 \
+			$(cat $result |
+			grep -c \
+				$(xmllint --xpath "//conf/row" $CONFIG |
+				sed -e 's/<row>//g' -e 's/<.*$//g')
+			)`
 	do
-		echo $a >cabecera
-		grep  $a $result|sed -e "s/$a://g" > temp2
-		cat cabecera temp2 > temp3
-		cat temp3| tr -d '\n' >> temp4
-		echo >> temp4
+		if [ 0 -eq $test ]; then
+			for property in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+			do
+				a=`cat $result | grep $property | sed -n -e "1 p" | sed -e "s/: .*//"`
+				echo -n "$a " >> $result.xml
+			done
+		else
+			for property in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+			do
+				a=`cat $result | grep $property | sed -n -e "$test p" | sed -e "s/.*: //"`
+				echo -n "$a " >> $result.xml
+			done
+		fi
+		echo "" >> $result.xml
 	done
-	cat temp temp4 >> resultados/$result
-	cat temp temp4 >> resultados/todas_las_pruebas_juntas
-	rm temp* cabecera
 done
