@@ -26,26 +26,34 @@ do
 done
 for result in $SEARCH
 do
+	echo -n "$result start: "
+	date
 	rm -f $result.xml
 	RESULT=$(cat $result)
-	echo -n "$result start: "
-	date;
+
+	declare -A properties
+	for property in $PROPERTIES
+	do
+		prop=`echo "$RESULT" | grep $property| sed -e "s/.*: //"`
+		properties[$property]=$prop
+		echo "$property - ${properties['$property']}" 
+	done
+
 	for test in `seq 0 $TESTS`
 	do
-		echo -n "$test start: "
-		date
 		for property in $PROPERTIES
 		do
 			if [ 0 -eq $test ]; then
-				a=`echo $RESULT | grep $property | sed -n -e "1 p" | sed -e "s/: .*//"`
+				a=$property
 			else
-				a=`echo $RESULT | grep $property | sed -n -e "$test p" | sed -e "s/.*: //"`
+				a=`echo ${properties["$property"]} | cut -d " " -f $test`
+			fi
+			if [ -z "$a" ]; then
+				a=0
 			fi
 			echo -n "$a " >> $result.xml
 		done
 		echo "" >> $result.xml
-		echo -n "$test end: "
-		date
 	done
 	echo -n "$result end: "
 	date;
