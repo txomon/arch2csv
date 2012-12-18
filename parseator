@@ -18,29 +18,35 @@ done
 if [ -z $1 ]; then echo "Falta el archivo de configuración del parseator" && exit 1 ; fi
 CONFIG=$1
 mkdir -p resultados
+PROPERTIES=$(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+for result in $SEARCH
+do
+	TESTS=$(cat $result |	grep -c $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<.*$//g'))
+	break
+done
 for result in $SEARCH
 do
 	rm -f $result.xml
-	for test in `seq 0 \
-			$(cat $result |
-			grep -c \
-				$(xmllint --xpath "//conf/row" $CONFIG |
-				sed -e 's/<row>//g' -e 's/<.*$//g')
-			)`
+	RESULT=$(cat $result)
+	echo -n "$result start: "
+	date;
+	for test in `seq 0 $TESTS`
 	do
-		if [ 0 -eq $test ]; then
-			for property in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
-			do
-				a=`cat $result | grep $property | sed -n -e "1 p" | sed -e "s/: .*//"`
-				echo -n "$a " >> $result.xml
-			done
-		else
-			for property in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
-			do
-				a=`cat $result | grep $property | sed -n -e "$test p" | sed -e "s/.*: //"`
-				echo -n "$a " >> $result.xml
-			done
-		fi
+		echo -n "$test start: "
+		date
+		for property in $PROPERTIES
+		do
+			if [ 0 -eq $test ]; then
+				a=`echo $RESULT | grep $property | sed -n -e "1 p" | sed -e "s/: .*//"`
+			else
+				a=`echo $RESULT | grep $property | sed -n -e "$test p" | sed -e "s/.*: //"`
+			fi
+			echo -n "$a " >> $result.xml
+		done
 		echo "" >> $result.xml
+		echo -n "$test end: "
+		date
 	done
+	echo -n "$result end: "
+	date;
 done
