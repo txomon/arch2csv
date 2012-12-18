@@ -36,9 +36,7 @@ do
 	do
 		prop=`echo "$RESULT" | grep $property| sed -e "s/.*: //"`
 		properties[$property]=$prop
-		echo "$property - ${properties['$property']}" 
 	done
-
 	for test in `seq 0 $TESTS`
 	do
 		for property in $PROPERTIES
@@ -46,7 +44,7 @@ do
 			if [ 0 -eq $test ]; then
 				a=$property
 			else
-				a=`echo ${properties["$property"]} | cut -d " " -f $test`
+				a=`echo ${properties[$property]} | cut -d " " -f $test`
 			fi
 			if [ -z "$a" ]; then
 				a=0
