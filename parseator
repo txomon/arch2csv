@@ -1,17 +1,14 @@
 #!/bin/bash
-#Intento de script para parsear pruebas en la arquitectura 
+# Parseamos el directorio actual para saber cuales son los ficheros de resultados
+SEARCH=*results*.txt
 
+# Como usamos el programa
 usage(){
 	echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
 }
 
-while getopts "h" opt
-do
-	case $opt in
-	h) usage; exit 0;
-	esac
-done
-CONFIG=$1
+linear(){
+	CONFIG=$1
 SEARCH=*results*
 mkdir resultados
 for result in $SEARCH
@@ -28,4 +25,82 @@ do
 	cat temp temp4 >> resultados/$result
 	cat temp temp4 >> resultados/todas_las_pruebas_juntas
 	rm temp* cabecera
+done
+}
+
+# Parseamos las opciones
+TEMP=`getopt -o hl --long help,lines \
+     -n "$0" -- "$@"`
+eval set -- "$TEMP"
+while true
+do
+	case "$1" in
+		-h|--help) usage; exit 0;;
+		-l|--line) shift; linear $1; exit 0;;
+		--) shift; break;;
+	esac
+done
+if [ -z $1 ]; then echo "Falta el archivo de configuración del parseator" && exit 1 ; fi
+CONFIG=$1
+
+# Aqui ya tenemos todo lo necesario
+# Primero conseguimos todas las propiedades que queremos extraer. Éstas están
+# bajo el xpath /conf/row
+
+PROPERTIES=$(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
+
+# Aqui hayamos cuantos tests hay en un fichero. La idea es que no tengamos
+# que contarlo cada vez que habramos un fichero.
+for result in $SEARCH
+do
+	TESTS=$(cat $result |	grep -c $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<.*$//g'))
+	break
+done
+
+# Ahora empezamos el bucle principal. Para cada fichero de resultados
+for result in $SEARCH
+do
+	# Borramos el que se haya podido generar para este antes
+	rm -f $result.xml
+
+	# Ponemos en memoria cual es el fichero que vamos a procesar
+	RESULT=$(cat $result)
+
+	# Creamos un array asociativo para guardar todos los valores
+	# referenciados por la propiedad que representan
+	declare -A properties
+	for property in $PROPERTIES
+	do
+		# Conseguimos todas los valores juntas
+		prop=`echo "$RESULT" | grep $property| sed -e "s/.*: //"`
+
+		# Y las unimos a la propiedad que representan
+		properties[$property]=$prop
+	done
+
+	# Ahora, para cada test/linea
+	for test in `seq 0 $TESTS`
+	do
+		# Para cada propiedad/linea
+		for property in $PROPERTIES
+		do
+			# Si es la primera ronda
+			if [ 0 -eq $test ]; then
+				# Decimos que saque el nombre de la propiedad (label)
+				a=$property
+			else # Si no
+				# Decimos que saque el valor numero $test de todos los que tiene asociados
+				a=`echo ${properties[$property]} | cut -d " " -f $test`
+			fi
+			if [ -z "$a" ]; then
+				# Si por lo que fuera, la propiedad que hemos especificado
+				# no existe, o no se ha encontrado, ponemos valor 0
+				a=0
+			fi
+			# Hacemos que saque el valor y un espacio sin salto de línea
+			echo -n "$a " >> $result.xml
+		done
+		# Al acabar el test, hacemos que salte de línea
+		echo "" >> $result.xml
+	done
 done
