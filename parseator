@@ -1,5 +1,5 @@
 #!/bin/bash
-#Intento de script para parsear pruebas en la arquitectura
+#Intento de script para parsear pruebas en la arquitectura 
 
 usage(){
 	echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
