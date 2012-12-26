@@ -30,12 +30,22 @@ class LogFile:
 		self.test_number = 0
 		for line in logfile:
 			line = line.strip()
-			continue if not line
+			if not line: continue
 			if line[0] == "#":
 				self.test_number += 1
 			else:
-				
-			
+				temp = line.partition(sep)
+				if temp[0] in self.dictionary:
+					if temp[2]:
+						self.dictionary[temp[0]].insert(self.test_number, temp[2])
+					else:
+						self.dictionary[temp[0]].insert(self.test_number, 0)
+				else:
+					if temp[2]:
+						self.dictionary[temp[0]]=[temp[2]]
+					else:
+						self.dictionary[temp[0]]=[0]
+		print(self.dictionary)
 
 	def get_values(self, attribute):
 		""" (str) -> list of str
@@ -103,7 +113,7 @@ if __name__ == "__main__":
 				help="The XML config file you want to use")
 
 	# The log files to be parsed should be passed
-	arg_parser.add_argument("log_file", nargs="+", action="append",
+	arg_parser.add_argument("log_file", nargs="+",
 				type=argparse.FileType("r"),
 				help="The log file to be parsed")
 
