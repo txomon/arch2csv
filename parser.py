@@ -27,7 +27,15 @@ class LogFile:
 		from using sep as the separator between attribute and value
 		"""
 		self.dictionary = {}
-		
+		self.test_number = 0
+		for line in logfile:
+			line = line.strip()
+			continue if not line
+			if line[0] == "#":
+				self.test_number += 1
+			else:
+				
+			
 
 	def get_values(self, attribute):
 		""" (str) -> list of str
@@ -86,7 +94,7 @@ if __name__ == "__main__":
 		description="A script that parses log files and outputs them as csv files",
 		epilog="Bugs should be sent to javierdo1<at>gmail<dot>com",
 		)
-	
+
 	# Then we start adding the arguments it supports
 
 	# The xml config file is totally needed, it is the first argument to be put
@@ -98,9 +106,13 @@ if __name__ == "__main__":
 	arg_parser.add_argument("log_file", nargs="+", action="append",
 				type=argparse.FileType("r"),
 				help="The log file to be parsed")
-	
+
 	arguments = arg_parser.parse_args()
 	## Ends argument parsing
 	###
 	
-	
+	###
+	## Start initializing the LogFile classes
+	for log_file in arguments.log_file:
+		logfile = LogFile(log_file)
+		
