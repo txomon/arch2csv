@@ -5,38 +5,36 @@ SEARCH=*results*.txt
 # Como usamos el programa
 usage(){
 	echo "Usage: First argument should be the config file in XML, and the results files must be in the current directory"
-}
-
-linear(){
-	CONFIG=$1
-SEARCH=*results*
-mkdir resultados
-for result in $SEARCH
-do
-	echo  $result > temp
-	for a in $(xmllint --xpath "//conf/row" $CONFIG | sed -e 's/<row>//g' -e 's/<\/row>/ /g')
-	do
-		echo $a >cabecera
-		grep  $a $result|sed -e "s/$a://g" > temp2
-		cat cabecera temp2 > temp3
-		cat temp3| tr -d '\n' >> temp4
-		echo >> temp4
-	done
-	cat temp temp4 >> resultados/$result
-	cat temp temp4 >> resultados/todas_las_pruebas_juntas
-	rm temp* cabecera
-done
+	cat <<EOF
+	The xml file should have the following structure:
+	<conf> <!-- Root tag --!>
+		<parameters> <!-- The parameters we want to output --!>
+			<parameter> <!-- One of the parameters we want to output --!>
+				dag.total_time
+			</parameter>
+		</parameters>
+		<graphs> <!-- The graphs we want to generate --!>
+			<graph name="filename"> <!-- One graph with its file name --!>
+				<xaxys> <!-- columns to be in the x axis --!>
+				dag.packets_per_second
+				</xaxys>
+				<yaxys> <!-- columns to be in the y axis --!>
+				capture_stats.soft_interrupt_cycles/dag.total_time
+				</yaxys>
+			</graph>
+		</graphs>
+	</conf>
+EOF
 }
 
 # Parseamos las opciones
-TEMP=`getopt -o hl --long help,lines \
+TEMP=`getopt -o h --long help \
      -n "$0" -- "$@"`
 eval set -- "$TEMP"
 while true
 do
 	case "$1" in
 		-h|--help) usage; exit 0;;
-		-l|--line) shift; linear $1; exit 0;;
 		--) shift; break;;
 	esac
 done

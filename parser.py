@@ -14,6 +14,8 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import xml.etree.ElementTree as ET
+
 class LogFile:
 	"""
 	It represents a log file, with all the rows accessible in 
@@ -96,7 +98,7 @@ class LogFile:
 class OutFile:
 	"""
 	It is the output file that has all the selected attributes with their
-values
+	values
 	"""
 	def __init__(self, outfile):
 		"""
@@ -118,13 +120,48 @@ class GraphicFile:
 class XMLFile:
 	"""
 	It is the xml input file that is meant to describe what 
-	the program has to do
+	the program has to do.
+	
+	The xml file should have the following structure:
+	<conf> <!-- Root tag --!>
+		<parameters> <!-- The parameters we want to output --!>
+			<parameter name="dag.total_time" alias="total_time"/><!-- One of the parameters we want to output --!>
+			<parameter alias="softirq_persec">
+				<operation operator="/"
+					operand1="capture_stats.soft_interrupt_cycles"
+					operand2="dag.total_time" 
+				/>
+			</parameter>
+		</parameters>
+		<graphs> <!-- The graphs we want to generate --!>
+			<graph name="filename"> <!-- One graph with its file name --!>
+				<xaxys> <!-- columns to be in the x axis, this could also be in the graph node as an attribute --!>
+					dag.packets_per_second
+				</xaxys>
+				<yaxys> <!-- columns to be in the y axis --!>
+					<operation operator="+"
+						operand1="capture_stats.soft_interrupt_cycles">
+						<operand2>
+							<operation operator="*"
+								operand1="dag.total_time"
+								operand2="1"
+							/>
+						</operand2>
+					</operation>
+				</yaxys>
+			</graph>
+		</graphs>
+	</conf>
 	"""
 	def __init__(self, xml_file):
 		"""
 		Receives the xml_file and parses it, creating its internal
 		data structure
 		"""
+		self.tree = ET.parse(xml_file)
+
+	def get_attributes(self):
+		return self.tree.findall("./conf/parameters
 
 # If this script is used as an script
 if __name__ == "__main__":
@@ -135,21 +172,21 @@ if __name__ == "__main__":
 	
 	# First, we describe the program
 	arg_parser = argparse.ArgumentParser(
-		description="A script that parses log files and outputs them as csv files",
-		epilog="Bugs should be sent to javierdo1<at>gmail<dot>com",
+		description = "A script that parses log files and outputs them as csv files",
+		epilog = "Bugs should be sent to javierdo1<at>gmail<dot>com",
 		)
 
 	# Then we start adding the arguments it supports
 
 	# The xml config file is totally needed, it is the first argument to be put
-	arg_parser.add_argument("xml_config", nargs=1,
-				type=argparse.FileType("r"),
-				help="The XML config file you want to use")
+	arg_parser.add_argument("xml_config", nargs = 1,
+				type = argparse.FileType("r"),
+				help = "The XML config file you want to use")
 
 	# The log files to be parsed should be passed
-	arg_parser.add_argument("log_file", nargs="+",
-				type=argparse.FileType("r"),
-				help="The log file to be parsed")
+	arg_parser.add_argument("log_file", nargs = "+",
+				type = argparse.FileType("r"),
+				help = "The log file to be parsed")
 
 	arguments = arg_parser.parse_args()
 	## Ends argument parsing
@@ -159,5 +196,6 @@ if __name__ == "__main__":
 	## Start initializing the LogFile classes
 	logfiles={}
 	for log_file in arguments.log_file:
-		logfiles[log_file.name]=LogFile(log_file)
-		
+		logfiles[log_file.name] = LogFile(log_file)
+
+	xmlfile = XMLFile(arg_parser.xml_config)
