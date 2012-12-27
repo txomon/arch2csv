@@ -26,37 +26,71 @@ class LogFile:
 		Receives the logfile it has to parse and extract the information
 		from using sep as the separator between attribute and value
 		"""
+		
+		# We initialize the object to 0
 		self.dictionary = {}
 		self.test_number = 0
+		
+		# Read each line of the file
 		for line in logfile:
-			line = line.strip()
+			# Erase spaces and newline chars
+			line = line.rstrip("\n")
+			# If this is an empty string (was newline) go to next iteration
 			if not line: continue
+			# If this line is a comment
 			if line[0] == "#":
+				# We increase the test we are in
 				self.test_number += 1
+			# By design constraints, the rest are attributes and values
 			else:
+				# We create a tuple from the line, separing attribute and value
 				temp = line.partition(sep)
+				# We check that temp[1] exits, if it doesn't, this is not a real logfile
+				#+I found that the arch currently is has a bug because outputs this:
+				#+capture_stats.stats_iface eth2: 
+				if temp[1] == "":
+					# We split it from the space
+					temp = line.rpartition(" ")
+					# If we can't split by the colon and get sure it gets partitioned,
+					# it is not a real logfile
+					if (temp[2].rpartition(":")[1] != ":" or temp[2].rpartition(":")[2] != ""):
+						raise ValueError("The provided file", logfile, "is not a real logfile")
+					# We reconstruct temp tuple if it passed the sanitycheck
+					temp = (temp[0], ": ", temp[2].rpartition(":")[1])
+				# If the attribute is already in the dictionary
 				if temp[0] in self.dictionary:
+					# If we have a value
 					if temp[2]:
+						# Add the value to the list of the dictionary's value
 						self.dictionary[temp[0]].insert(self.test_number, temp[2])
+					# if we don't have a value
 					else:
+						# Add a 0 to the list of the dictionary
 						self.dictionary[temp[0]].insert(self.test_number, 0)
+				# If the attribute is not in the dictionary
 				else:
+					# If we have a value to put
 					if temp[2]:
+						# We create a key-list dictionary entry 
+						# with the attribute and the value
 						self.dictionary[temp[0]]=[temp[2]]
+					# if we don't have anything
 					else:
+						# We create a 0 value in the entry
 						self.dictionary[temp[0]]=[0]
-		print(self.dictionary)
 
 	def get_values(self, attribute):
 		""" (str) -> list of str
 		It returns a list of the values of the attribute in 
 		the file
 		"""
+		return self.dictionary[attribute]
 
 	def get_attributes(self):
 		""" () -> list of str
 		It returns the list of attributes in the log file
 		"""
+		return self.dictionary.keys()
 
 
 class OutFile:
@@ -123,6 +157,7 @@ if __name__ == "__main__":
 	
 	###
 	## Start initializing the LogFile classes
+	logfiles={}
 	for log_file in arguments.log_file:
-		logfile = LogFile(log_file)
+		logfiles[log_file.name]=LogFile(log_file)
 		
