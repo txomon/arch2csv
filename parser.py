@@ -14,7 +14,7 @@
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import xml.etree.ElementTree as ET
+import xml.dom.minidom as minidom
 
 class LogFile:
 	"""
@@ -122,23 +122,43 @@ class XMLFile:
 	It is the xml input file that is meant to describe what 
 	the program has to do.
 	
-	The xml file should have the following structure:
-	<conf> <!-- Root tag --!>
-		<parameters> <!-- The parameters we want to output --!>
-			<parameter name="dag.total_time" alias="total_time"/><!-- One of the parameters we want to output --!>
-			<parameter alias="softirq_persec">
+	To be able to be checked against the following dtd
+	and the xml file should be something like bellow's:
+	<!DOCTYPE conf [
+	<!ELEMENT conf (parameters?,graphs?)>
+	<!ELEMENT parameters (parameter+)>
+	<!ELEMENT parameter (#PCDATA|operation)*>
+	<!ATTLIST parameter name ID #IMPLIED>
+	<!ATTLIST parameter row CDATA #IMPLIED>
+	<!ELEMENT operation (operand1?,operand2?)>
+	<!ATTLIST operation operator CDATA #REQUIRED>
+	<!ATTLIST operation operand1 CDATA #IMPLIED>
+	<!ATTLIST operation operand2 CDATA #IMPLIED>
+	<!ELEMENT operand1 (operation)>
+	<!ELEMENT operand2 (operation)>
+	<!ELEMENT graphs (graph+)>
+	<!ELEMENT graph (xaxys?,yaxys?)>
+	<!ATTLIST graph name ID #REQUIRED>
+	<!ATTLIST graph xaxys IDREF #IMPLIED>
+	<!ATTLIST graph yaxys IDREF #IMPLIED>
+	<!ELEMENT xaxys (operation)>
+	<!ELEMENT yaxys (operation)>
+	]>
+	
+	<conf> <!-- Root tag -->
+		<parameters> <!-- The parameters we want to output -->
+			<parameter name="dag.total_time" row="total_time"/><!-- One of the parameters we want to output -->
+			<parameter name="softirq_persec">
 				<operation operator="/"
 					operand1="capture_stats.soft_interrupt_cycles"
 					operand2="dag.total_time" 
 				/>
 			</parameter>
+			<parameter name="dag.packets_per_second" row="dag.packets_per_second"/>
 		</parameters>
-		<graphs> <!-- The graphs we want to generate --!>
-			<graph name="filename"> <!-- One graph with its file name --!>
-				<xaxys> <!-- columns to be in the x axis, this could also be in the graph node as an attribute --!>
-					dag.packets_per_second
-				</xaxys>
-				<yaxys> <!-- columns to be in the y axis --!>
+		<graphs> <!-- The graphs we want to generate -->
+			<graph name="filename" xaxys="dag.packets_per_second"> <!-- One graph with its file name -->
+				<yaxys> <!-- columns to be in the y axis -->
 					<operation operator="+"
 						operand1="capture_stats.soft_interrupt_cycles">
 						<operand2>
@@ -152,16 +172,28 @@ class XMLFile:
 			</graph>
 		</graphs>
 	</conf>
+	
+
+	
 	"""
 	def __init__(self, xml_file):
 		"""
 		Receives the xml_file and parses it, creating its internal
-		data structure
+		data structure. Also will make a sanitycheck on the xml file
 		"""
-		self.tree = ET.parse(xml_file)
+		# We first parse the xml file
+		self.dom = minidom.parse(xml_file)
+		# Now we check that we have a ElementNode. Take into account that this
+		# cannot be enought, we can have another nodes that are not Element nodes
+		# and still be correct
+		if self.dom.documentElement.nodeType != minidom.Element.ELEMENT_NODE:
+			# throw an exception if we are not in an element node
+			raise ValueError("The provided xml_config file is not a valid xml config file")
+		
+		
 
 	def get_attributes(self):
-		return self.tree.findall("./conf/parameters
+		return []
 
 # If this script is used as an script
 if __name__ == "__main__":
@@ -198,4 +230,4 @@ if __name__ == "__main__":
 	for log_file in arguments.log_file:
 		logfiles[log_file.name] = LogFile(log_file)
 
-	xmlfile = XMLFile(arg_parser.xml_config)
+	xmlfile = XMLFile(arguments.xml_config[0])
