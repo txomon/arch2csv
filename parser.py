@@ -15,6 +15,7 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import xml.dom.minidom as minidom
+import subprocess
 
 class LogFile:
 	"""
@@ -128,7 +129,7 @@ class XMLFile:
 	<!ELEMENT conf (parameters?,graphs?)>
 	<!ELEMENT parameters (parameter+)>
 	<!ELEMENT parameter (#PCDATA|operation)*>
-	<!ATTLIST parameter name ID #IMPLIED>
+	<!ATTLIST parameter name ID #REQUIRED>
 	<!ATTLIST parameter row CDATA #IMPLIED>
 	<!ELEMENT operation (operand1?,operand2?)>
 	<!ATTLIST operation operator CDATA #REQUIRED>
@@ -173,9 +174,8 @@ class XMLFile:
 		</graphs>
 	</conf>
 	
-
-	
 	"""
+
 	def __init__(self, xml_file):
 		"""
 		Receives the xml_file and parses it, creating its internal
@@ -183,14 +183,24 @@ class XMLFile:
 		"""
 		# We first parse the xml file
 		self.dom = minidom.parse(xml_file)
-		# Now we check that we have a ElementNode. Take into account that this
-		# cannot be enought, we can have another nodes that are not Element nodes
-		# and still be correct
-		if self.dom.documentElement.nodeType != minidom.Element.ELEMENT_NODE:
-			# throw an exception if we are not in an element node
-			raise ValueError("The provided xml_config file is not a valid xml config file")
+		# Now we check that we have a valid xml, using the dtd defined
+		# in the docs
+		self.dtd = self.__doc__.partition("<!DOCTYPE conf [")[2].partition("]>")[0].expandtabs(0)
+		self._check_xml(xml_file)
 		
+	def _check_xml(self,xml_file):
+		"""
+		Writes the dtd in /tmp/parser.dtd and checks received xml against it,
+		exiting from the program if check fails
+		"""
+		dtd_file = open("/tmp/parser.dtd","w")
+		dtd_file.write(self.dtd)
+		dtd_file.close()
 		
+		if 0 != subprocess.call(["xmllint", "--noout", "--dtdvalid", "/tmp/parser.dtd",xml_file.name]):
+			print("Use /tmp/parser.dtd to check your xml's syntax with:")
+			print("\txmllint --noout --dtdvalid /tmp/parser.dtd xmlfile")
+			exit()
 
 	def get_attributes(self):
 		return []

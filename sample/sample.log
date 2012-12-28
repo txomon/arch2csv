@@ -1,0 +1,5124 @@
+
+
+dag.sent_bursts: 201367
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 5013.392108
+dag.total_time: 40.165819
+dag.packets_per_second: 50133.921083
+dag.total_bytes_sent_to_dag_card: 161093600 (153.63 MiB)
+dag.approx.average_speed: 32.09 Mbps (4.01 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 128877082
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 2013674
+ksensor_eth2.rx_mcast_packets: 25
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 2013697
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 0
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 402626
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 402871
+ksensor_eth2.nic_irqs: 209292
+ksensor_eth2.nic_avoided_irqs: 193579
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2360
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 128877082
+IF-MIB::ifOutUcastPkts.10108: 2013674
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2203
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2425
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 28
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 128874880
+IF-MIB::ifInUcastPkts.10112: 2013670
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2425
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 28
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 38293858376
+sched_stats.2: 40255555746
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 201516
+capture_stats.insufficient_quota: 96
+capture_stats.hard_interrupt_cycles: 2444
+capture_stats.polling_cycles: 15786
+capture_stats.soft_interrupt_cycles: 18359
+capture_stats.hard_total_time: 67092777
+capture_stats.polling_total_time: 3425518425
+capture_stats.soft_total_time: 3486707695
+capture_stats.polling_times: 201612
+capture_stats.hard_interrupt_times: 201516
+capture_stats.soft_interrupt_times: 201516
+capture_stats.polling_packets: 2013704
+capture_stats.polling_average: 16990
+capture_stats.hard_interrupt_average: 332
+capture_stats.soft_interrupt_average: 17302
+capture_stats.dequeue_time: 1306623094
+capture_stats.queue_time: 206496912
+capture_stats.dropped_time: 459458260
+
+
+
+ksensor.CPU0.captured: 982032
+ksensor.CPU0.dropped: 1031672
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 2020
+ksensor.CPU0.cong_low: 2020
+ksensor.CPU0.cong_mid: 2020
+ksensor.CPU0.cong_high: 2007644
+ksensor.CPU0.processed: 477900
+ksensor.CPU0.decode_errors: 9
+ksensor.CPU0.total_errors: 9
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 504104
+ksensor.CPU1.decode_errors: 19
+ksensor.CPU1.total_errors: 19
+ksensor.TOTAL.captured: 982032
+ksensor.TOTAL.dropped: 1031672
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 2020
+ksensor.TOTAL.cong_low: 2020
+ksensor.TOTAL.cong_mid: 2020
+ksensor.TOTAL.cong_high: 2007644
+ksensor.TOTAL.processed: 982004
+ksensor.TOTAL.decode_errors: 28
+ksensor.TOTAL.total_errors: 28
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 403958
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 10057.157232
+dag.total_time: 40.166221
+dag.packets_per_second: 100571.572317
+dag.total_bytes_sent_to_dag_card: 323166400 (308.20 MiB)
+dag.approx.average_speed: 64.37 Mbps (8.05 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 258535258
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 4039584
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 4039606
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 15
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 807914
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 807946
+ksensor_eth2.nic_irqs: 416116
+ksensor_eth2.nic_avoided_irqs: 391830
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2202
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 25
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 258535322
+IF-MIB::ifOutUcastPkts.10108: 4039584
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2203
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2203
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 258533120
+IF-MIB::ifInUcastPkts.10112: 4039580
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2203
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 25
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 36382247898
+sched_stats.2: 40255333348
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 403992
+capture_stats.insufficient_quota: 2
+capture_stats.hard_interrupt_cycles: 309
+capture_stats.polling_cycles: 9184
+capture_stats.soft_interrupt_cycles: 9632
+capture_stats.hard_total_time: 135921206
+capture_stats.polling_total_time: 6741810951
+capture_stats.soft_total_time: 6857492200
+capture_stats.polling_times: 403994
+capture_stats.hard_interrupt_times: 403992
+capture_stats.soft_interrupt_times: 403992
+capture_stats.polling_packets: 4039611
+capture_stats.polling_average: 16687
+capture_stats.hard_interrupt_average: 336
+capture_stats.soft_interrupt_average: 16974
+capture_stats.dequeue_time: 4243376348
+capture_stats.queue_time: 218944017
+capture_stats.dropped_time: 1339951694
+
+
+
+ksensor.CPU0.captured: 960726
+ksensor.CPU0.dropped: 3078885
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1177
+ksensor.CPU0.cong_low: 1249
+ksensor.CPU0.cong_mid: 1343
+ksensor.CPU0.cong_high: 4035842
+ksensor.CPU0.processed: 456635
+ksensor.CPU0.decode_errors: 5
+ksensor.CPU0.total_errors: 5
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 504067
+ksensor.CPU1.decode_errors: 19
+ksensor.CPU1.total_errors: 19
+ksensor.TOTAL.captured: 960726
+ksensor.TOTAL.dropped: 3078885
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1177
+ksensor.TOTAL.cong_low: 1249
+ksensor.TOTAL.cong_mid: 1343
+ksensor.TOTAL.cong_high: 4035842
+ksensor.TOTAL.processed: 960702
+ksensor.TOTAL.decode_errors: 24
+ksensor.TOTAL.total_errors: 24
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 604690
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 15054.147155
+dag.total_time: 40.167669
+dag.packets_per_second: 150541.471550
+dag.total_bytes_sent_to_dag_card: 483752000 (461.34 MiB)
+dag.approx.average_speed: 96.35 Mbps (12.04 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 387003896
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 6046904
+ksensor_eth2.rx_mcast_packets: 26
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 6046927
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 259
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 1200892
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 1217898
+ksensor_eth2.nic_irqs: 633115
+ksensor_eth2.nic_avoided_irqs: 584783
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2360
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 387003960
+IF-MIB::ifOutUcastPkts.10108: 6046904
+IF-MIB::ifOutNUcastPkts.10108: 27
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2361
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2203
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 387001600
+IF-MIB::ifInUcastPkts.10112: 6046900
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2203
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 25
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 34455743010
+sched_stats.2: 40251594001
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 1
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 616155
+capture_stats.insufficient_quota: 5359
+capture_stats.hard_interrupt_cycles: 2730
+capture_stats.polling_cycles: 15252
+capture_stats.soft_interrupt_cycles: 17986
+capture_stats.hard_total_time: 204629908
+capture_stats.polling_total_time: 10132382153
+capture_stats.soft_total_time: 10306023808
+capture_stats.polling_times: 621514
+capture_stats.hard_interrupt_times: 616155
+capture_stats.soft_interrupt_times: 616156
+capture_stats.polling_packets: 6046932
+capture_stats.polling_average: 16302
+capture_stats.hard_interrupt_average: 332
+capture_stats.soft_interrupt_average: 16726
+capture_stats.dequeue_time: 2877016167
+capture_stats.queue_time: 231483312
+capture_stats.dropped_time: 2202935634
+
+
+
+ksensor.CPU0.captured: 940801
+ksensor.CPU0.dropped: 5106133
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1214
+ksensor.CPU0.cong_low: 1213
+ksensor.CPU0.cong_mid: 1210
+ksensor.CPU0.cong_high: 6043297
+ksensor.CPU0.processed: 430461
+ksensor.CPU0.decode_errors: 11
+ksensor.CPU0.total_errors: 11
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 510315
+ksensor.CPU1.decode_errors: 14
+ksensor.CPU1.total_errors: 14
+ksensor.TOTAL.captured: 940801
+ksensor.TOTAL.dropped: 5106133
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1214
+ksensor.TOTAL.cong_low: 1213
+ksensor.TOTAL.cong_mid: 1210
+ksensor.TOTAL.cong_high: 6043297
+ksensor.TOTAL.processed: 940776
+ksensor.TOTAL.decode_errors: 25
+ksensor.TOTAL.total_errors: 25
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 813991
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 20264.931810
+dag.total_time: 40.167468
+dag.packets_per_second: 202649.318100
+dag.total_bytes_sent_to_dag_card: 651192800 (621.03 MiB)
+dag.approx.average_speed: 129.70 Mbps (16.21 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 520956378
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 8139914
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 8139936
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 30
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 1627981
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 1628011
+ksensor_eth2.nic_irqs: 854764
+ksensor_eth2.nic_avoided_irqs: 773247
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2360
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 520956442
+IF-MIB::ifOutUcastPkts.10108: 8139914
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2203
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2361
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 520954240
+IF-MIB::ifInUcastPkts.10112: 8139910
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2361
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 32580708066
+sched_stats.2: 40254558464
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 814009
+capture_stats.insufficient_quota: 4
+capture_stats.hard_interrupt_cycles: 2521
+capture_stats.polling_cycles: 15905
+capture_stats.soft_interrupt_cycles: 18745
+capture_stats.hard_total_time: 268855917
+capture_stats.polling_total_time: 13395159593
+capture_stats.soft_total_time: 13611320996
+capture_stats.polling_times: 814013
+capture_stats.hard_interrupt_times: 814009
+capture_stats.soft_interrupt_times: 814009
+capture_stats.polling_packets: 8139941
+capture_stats.polling_average: 16455
+capture_stats.hard_interrupt_average: 330
+capture_stats.soft_interrupt_average: 16721
+capture_stats.dequeue_time: 432351790
+capture_stats.queue_time: 236589699
+capture_stats.dropped_time: 3095207832
+
+
+
+ksensor.CPU0.captured: 900943
+ksensor.CPU0.dropped: 7239000
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1099
+ksensor.CPU0.cong_low: 1094
+ksensor.CPU0.cong_mid: 1094
+ksensor.CPU0.cong_high: 8136656
+ksensor.CPU0.processed: 395390
+ksensor.CPU0.decode_errors: 9
+ksensor.CPU0.total_errors: 9
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 505530
+ksensor.CPU1.decode_errors: 14
+ksensor.CPU1.total_errors: 14
+ksensor.TOTAL.captured: 900943
+ksensor.TOTAL.dropped: 7239000
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1099
+ksensor.TOTAL.cong_low: 1094
+ksensor.TOTAL.cong_mid: 1094
+ksensor.TOTAL.cong_high: 8136656
+ksensor.TOTAL.processed: 900920
+ksensor.TOTAL.decode_errors: 23
+ksensor.TOTAL.total_errors: 23
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 1022549
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 25457.495961
+dag.total_time: 40.166912
+dag.packets_per_second: 254574.959609
+dag.total_bytes_sent_to_dag_card: 818039200 (780.14 MiB)
+dag.approx.average_speed: 162.93 Mbps (20.37 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 654433182
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 10225494
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 10225517
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 0
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 116
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 2045098
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 2045126
+ksensor_eth2.nic_irqs: 1072740
+ksensor_eth2.nic_avoided_irqs: 972386
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 1822
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 24
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 654433182
+IF-MIB::ifOutUcastPkts.10108: 10225494
+IF-MIB::ifOutNUcastPkts.10108: 24
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 1980
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 26
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 1822
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 24
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 654431360
+IF-MIB::ifInUcastPkts.10112: 10225490
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 1822
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 24
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 30610186513
+sched_stats.2: 40255075913
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 1022575
+capture_stats.insufficient_quota: 7
+capture_stats.hard_interrupt_cycles: 2554
+capture_stats.polling_cycles: 15817
+capture_stats.soft_interrupt_cycles: 18272
+capture_stats.hard_total_time: 336328408
+capture_stats.polling_total_time: 16854750594
+capture_stats.soft_total_time: 17118839133
+capture_stats.polling_times: 1022582
+capture_stats.hard_interrupt_times: 1022575
+capture_stats.soft_interrupt_times: 1022575
+capture_stats.polling_packets: 10225519
+capture_stats.polling_average: 16482
+capture_stats.hard_interrupt_average: 328
+capture_stats.soft_interrupt_average: 16740
+capture_stats.dequeue_time: 2759363897
+capture_stats.queue_time: 241861224
+capture_stats.dropped_time: 3991260674
+
+
+
+ksensor.CPU0.captured: 876204
+ksensor.CPU0.dropped: 9349316
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1083
+ksensor.CPU0.cong_low: 1079
+ksensor.CPU0.cong_mid: 1079
+ksensor.CPU0.cong_high: 10222279
+ksensor.CPU0.processed: 370076
+ksensor.CPU0.decode_errors: 3
+ksensor.CPU0.total_errors: 3
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 506114
+ksensor.CPU1.decode_errors: 11
+ksensor.CPU1.total_errors: 11
+ksensor.TOTAL.captured: 876204
+ksensor.TOTAL.dropped: 9349316
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1083
+ksensor.TOTAL.cong_low: 1079
+ksensor.TOTAL.cong_mid: 1079
+ksensor.TOTAL.cong_high: 10222279
+ksensor.TOTAL.processed: 876190
+ksensor.TOTAL.decode_errors: 14
+ksensor.TOTAL.total_errors: 14
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 1246582
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 31023.619778
+dag.total_time: 40.181707
+dag.packets_per_second: 310236.197780
+dag.total_bytes_sent_to_dag_card: 997265600 (951.07 MiB)
+dag.approx.average_speed: 198.55 Mbps (24.82 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 797814840
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 12465824
+ksensor_eth2.rx_mcast_packets: 27
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 12465848
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 132
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 2493164
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 2493195
+ksensor_eth2.nic_irqs: 1304847
+ksensor_eth2.nic_avoided_irqs: 1188348
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2424
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 797814904
+IF-MIB::ifOutUcastPkts.10108: 12465825
+IF-MIB::ifOutNUcastPkts.10108: 27
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2425
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2425
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 797812480
+IF-MIB::ifInUcastPkts.10112: 12465820
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2425
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 28611476522
+sched_stats.2: 40267799434
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 1246589
+capture_stats.insufficient_quota: 1
+capture_stats.hard_interrupt_cycles: 2378
+capture_stats.polling_cycles: 15829
+capture_stats.soft_interrupt_cycles: 18301
+capture_stats.hard_total_time: 407186914
+capture_stats.polling_total_time: 20441450130
+capture_stats.soft_total_time: 20733886631
+capture_stats.polling_times: 1246590
+capture_stats.hard_interrupt_times: 1246589
+capture_stats.soft_interrupt_times: 1246589
+capture_stats.polling_packets: 12465854
+capture_stats.polling_average: 16397
+capture_stats.hard_interrupt_average: 326
+capture_stats.soft_interrupt_average: 16632
+capture_stats.dequeue_time: 961092483
+capture_stats.queue_time: 255844570
+capture_stats.dropped_time: 650924592
+
+
+
+ksensor.CPU0.captured: 851656
+ksensor.CPU0.dropped: 11614198
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1103
+ksensor.CPU0.cong_low: 1099
+ksensor.CPU0.cong_mid: 1097
+ksensor.CPU0.cong_high: 12462555
+ksensor.CPU0.processed: 339692
+ksensor.CPU0.decode_errors: 8
+ksensor.CPU0.total_errors: 8
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 511947
+ksensor.CPU1.decode_errors: 9
+ksensor.CPU1.total_errors: 9
+ksensor.TOTAL.captured: 851656
+ksensor.TOTAL.dropped: 11614198
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1103
+ksensor.TOTAL.cong_low: 1099
+ksensor.TOTAL.cong_mid: 1097
+ksensor.TOTAL.cong_high: 12462555
+ksensor.TOTAL.processed: 851639
+ksensor.TOTAL.decode_errors: 17
+ksensor.TOTAL.total_errors: 17
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 1423719
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 35443.094130
+dag.total_time: 40.169151
+dag.packets_per_second: 354430.941296
+dag.total_bytes_sent_to_dag_card: 1138975200 (1086.21 MiB)
+dag.approx.average_speed: 226.84 Mbps (28.35 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 911182362
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 14237195
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 14237217
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 58
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 2839683
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 2855222
+ksensor_eth2.nic_irqs: 1469632
+ksensor_eth2.nic_avoided_irqs: 1385590
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2424
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 911182426
+IF-MIB::ifOutUcastPkts.10108: 14237195
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2267
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2425
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 911180160
+IF-MIB::ifInUcastPkts.10112: 14237190
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2425
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 26823696834
+sched_stats.2: 40256036568
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 1430731
+capture_stats.insufficient_quota: 7826
+capture_stats.hard_interrupt_cycles: 2685
+capture_stats.polling_cycles: 15690
+capture_stats.soft_interrupt_cycles: 18679
+capture_stats.hard_total_time: 466262481
+capture_stats.polling_total_time: 23572008333
+capture_stats.soft_total_time: 23926408410
+capture_stats.polling_times: 1438557
+capture_stats.hard_interrupt_times: 1430731
+capture_stats.soft_interrupt_times: 1430732
+capture_stats.polling_packets: 14237221
+capture_stats.polling_average: 16385
+capture_stats.hard_interrupt_average: 325
+capture_stats.soft_interrupt_average: 16723
+capture_stats.dequeue_time: 3908575034
+capture_stats.queue_time: 269501300
+capture_stats.dropped_time: 1439082925
+
+
+
+ksensor.CPU0.captured: 832466
+ksensor.CPU0.dropped: 13404755
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1088
+ksensor.CPU0.cong_low: 1086
+ksensor.CPU0.cong_mid: 1086
+ksensor.CPU0.cong_high: 14233961
+ksensor.CPU0.processed: 322506
+ksensor.CPU0.decode_errors: 5
+ksensor.CPU0.total_errors: 5
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 509945
+ksensor.CPU1.decode_errors: 10
+ksensor.CPU1.total_errors: 10
+ksensor.TOTAL.captured: 832466
+ksensor.TOTAL.dropped: 13404755
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1088
+ksensor.TOTAL.cong_low: 1086
+ksensor.TOTAL.cong_mid: 1086
+ksensor.TOTAL.cong_high: 14233961
+ksensor.TOTAL.processed: 832451
+ksensor.TOTAL.decode_errors: 15
+ksensor.TOTAL.total_errors: 15
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 1660981
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 41349.104525
+dag.total_time: 40.169697
+dag.packets_per_second: 413491.045252
+dag.total_bytes_sent_to_dag_card: 1328784800 (1267.23 MiB)
+dag.approx.average_speed: 264.63 Mbps (33.08 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1063030709
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 16609815
+ksensor_eth2.rx_mcast_packets: 26
+ksensor_eth2.rx_bcast_packets: 2
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 16609838
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 1
+ksensor_eth2.rx_256_to_511_octet_packets: 2
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 515
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 2
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 67
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 3320821
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 2
+ksensor_eth2.ring_status_update: 3322932
+ksensor_eth2.nic_irqs: 1725553
+ksensor_eth2.nic_avoided_irqs: 1597379
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 509
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 2
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2781
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 515
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 2
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1063030773
+IF-MIB::ifOutUcastPkts.10108: 16609815
+IF-MIB::ifOutNUcastPkts.10108: 29
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 3449
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 31
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 3291
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 29
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1063027840
+IF-MIB::ifInUcastPkts.10112: 16609810
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 3291
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 29
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 24612885643
+sched_stats.2: 40256713044
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 1661107
+capture_stats.insufficient_quota: 4672
+capture_stats.hard_interrupt_cycles: 2817
+capture_stats.polling_cycles: 15619
+capture_stats.soft_interrupt_cycles: 18492
+capture_stats.hard_total_time: 538103877
+capture_stats.polling_total_time: 27452024252
+capture_stats.soft_total_time: 27806366535
+capture_stats.polling_times: 1665779
+capture_stats.hard_interrupt_times: 1661107
+capture_stats.soft_interrupt_times: 1661107
+capture_stats.polling_packets: 16609845
+capture_stats.polling_average: 16479
+capture_stats.hard_interrupt_average: 323
+capture_stats.soft_interrupt_average: 16739
+capture_stats.dequeue_time: 2798358085
+capture_stats.queue_time: 283394012
+capture_stats.dropped_time: 2455686002
+
+
+
+ksensor.CPU0.captured: 802137
+ksensor.CPU0.dropped: 15807709
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1063
+ksensor.CPU0.cong_low: 1058
+ksensor.CPU0.cong_mid: 1058
+ksensor.CPU0.cong_high: 16606667
+ksensor.CPU0.processed: 287521
+ksensor.CPU0.decode_errors: 3
+ksensor.CPU0.total_errors: 3
+ksensor.CPU1.captured: 2
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 2
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 514607
+ksensor.CPU1.decode_errors: 8
+ksensor.CPU1.total_errors: 8
+ksensor.TOTAL.captured: 802139
+ksensor.TOTAL.dropped: 15807709
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1065
+ksensor.TOTAL.cong_low: 1058
+ksensor.TOTAL.cong_mid: 1058
+ksensor.TOTAL.cong_high: 16606667
+ksensor.TOTAL.processed: 802128
+ksensor.TOTAL.decode_errors: 11
+ksensor.TOTAL.total_errors: 11
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 1811932
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 45107.453746
+dag.total_time: 40.169237
+dag.packets_per_second: 451074.537463
+dag.total_bytes_sent_to_dag_card: 1449545600 (1382.39 MiB)
+dag.approx.average_speed: 288.69 Mbps (36.09 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1159638840
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 18119324
+ksensor_eth2.rx_mcast_packets: 27
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 18119348
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 141
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 3623855
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 3623898
+ksensor_eth2.nic_irqs: 1903726
+ksensor_eth2.nic_avoided_irqs: 1720172
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2424
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1159638904
+IF-MIB::ifOutUcastPkts.10108: 18119325
+IF-MIB::ifOutNUcastPkts.10108: 27
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2267
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2425
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1159636480
+IF-MIB::ifInUcastPkts.10112: 18119320
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2425
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 23195805016
+sched_stats.2: 40256997884
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 1811846
+capture_stats.insufficient_quota: 4419
+capture_stats.hard_interrupt_cycles: 2378
+capture_stats.polling_cycles: 15180
+capture_stats.soft_interrupt_cycles: 18202
+capture_stats.hard_total_time: 581348333
+capture_stats.polling_total_time: 29970972878
+capture_stats.soft_total_time: 30350743675
+capture_stats.polling_times: 1816265
+capture_stats.hard_interrupt_times: 1811846
+capture_stats.soft_interrupt_times: 1811846
+capture_stats.polling_packets: 18119354
+capture_stats.polling_average: 16501
+capture_stats.hard_interrupt_average: 320
+capture_stats.soft_interrupt_average: 16751
+capture_stats.dequeue_time: 3188139857
+capture_stats.queue_time: 282782963
+capture_stats.dropped_time: 3098373072
+
+
+
+ksensor.CPU0.captured: 772945
+ksensor.CPU0.dropped: 17346409
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1073
+ksensor.CPU0.cong_low: 1070
+ksensor.CPU0.cong_mid: 1068
+ksensor.CPU0.cong_high: 18116143
+ksensor.CPU0.processed: 263883
+ksensor.CPU0.decode_errors: 2
+ksensor.CPU0.total_errors: 2
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 509049
+ksensor.CPU1.decode_errors: 11
+ksensor.CPU1.total_errors: 11
+ksensor.TOTAL.captured: 772945
+ksensor.TOTAL.dropped: 17346409
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1073
+ksensor.TOTAL.cong_low: 1070
+ksensor.TOTAL.cong_mid: 1068
+ksensor.TOTAL.cong_high: 18116143
+ksensor.TOTAL.processed: 772932
+ksensor.TOTAL.decode_errors: 13
+ksensor.TOTAL.total_errors: 13
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 2097206
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 52208.298666
+dag.total_time: 40.169974
+dag.packets_per_second: 522082.986661
+dag.total_bytes_sent_to_dag_card: 1677764800 (1600.04 MiB)
+dag.approx.average_speed: 334.13 Mbps (41.77 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1342213598
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 20972064
+ksensor_eth2.rx_mcast_packets: 23
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 20972086
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 0
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 119
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 4194411
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 4194433
+ksensor_eth2.nic_irqs: 2154113
+ksensor_eth2.nic_avoided_irqs: 2040320
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 1822
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 24
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1342213662
+IF-MIB::ifOutUcastPkts.10108: 20972064
+IF-MIB::ifOutNUcastPkts.10108: 24
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 1822
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 24
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 1822
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 24
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1342211840
+IF-MIB::ifInUcastPkts.10112: 20972060
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 1822
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 24
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 20477560827
+sched_stats.2: 40256439116
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2096270
+capture_stats.insufficient_quota: 7812
+capture_stats.hard_interrupt_cycles: 2554
+capture_stats.polling_cycles: 15898
+capture_stats.soft_interrupt_cycles: 18669
+capture_stats.hard_total_time: 670995837
+capture_stats.polling_total_time: 34755746046
+capture_stats.soft_total_time: 35198297686
+capture_stats.polling_times: 2104082
+capture_stats.hard_interrupt_times: 2096270
+capture_stats.soft_interrupt_times: 2096271
+capture_stats.polling_packets: 20972091
+capture_stats.polling_average: 16518
+capture_stats.hard_interrupt_average: 320
+capture_stats.soft_interrupt_average: 16790
+capture_stats.dequeue_time: 3811215008
+capture_stats.queue_time: 337039835
+capture_stats.dropped_time: 13218279
+
+
+
+ksensor.CPU0.captured: 742465
+ksensor.CPU0.dropped: 20229626
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1055
+ksensor.CPU0.cong_low: 1051
+ksensor.CPU0.cong_mid: 1050
+ksensor.CPU0.cong_high: 20968935
+ksensor.CPU0.processed: 233128
+ksensor.CPU0.decode_errors: 1
+ksensor.CPU0.total_errors: 1
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 509330
+ksensor.CPU1.decode_errors: 6
+ksensor.CPU1.total_errors: 6
+ksensor.TOTAL.captured: 742465
+ksensor.TOTAL.dropped: 20229626
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1055
+ksensor.TOTAL.cong_low: 1051
+ksensor.TOTAL.cong_mid: 1050
+ksensor.TOTAL.cong_high: 20968935
+ksensor.TOTAL.processed: 742458
+ksensor.TOTAL.decode_errors: 7
+ksensor.TOTAL.total_errors: 7
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 2343567
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 58341.502196
+dag.total_time: 40.169809
+dag.packets_per_second: 583415.021963
+dag.total_bytes_sent_to_dag_card: 1874853600 (1788.00 MiB)
+dag.approx.average_speed: 373.39 Mbps (46.67 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1499884796
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 23435674
+ksensor_eth2.rx_mcast_packets: 25
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 23435697
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 0
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 168
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 4687134
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 4687155
+ksensor_eth2.nic_irqs: 2418818
+ksensor_eth2.nic_avoided_irqs: 2268337
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 1822
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 24
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1499884860
+IF-MIB::ifOutUcastPkts.10108: 23435674
+IF-MIB::ifOutNUcastPkts.10108: 26
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 1980
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 26
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 1822
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 24
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1499882880
+IF-MIB::ifInUcastPkts.10112: 23435670
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 1822
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 24
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 18260851395
+sched_stats.2: 40256949313
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2338469
+capture_stats.insufficient_quota: 11010
+capture_stats.hard_interrupt_cycles: 2806
+capture_stats.polling_cycles: 16080
+capture_stats.soft_interrupt_cycles: 18943
+capture_stats.hard_total_time: 739779112
+capture_stats.polling_total_time: 38666355988
+capture_stats.soft_total_time: 39132549015
+capture_stats.polling_times: 2349479
+capture_stats.hard_interrupt_times: 2338469
+capture_stats.soft_interrupt_times: 2338469
+capture_stats.polling_packets: 23435702
+capture_stats.polling_average: 16457
+capture_stats.hard_interrupt_average: 316
+capture_stats.soft_interrupt_average: 16734
+capture_stats.dequeue_time: 672388152
+capture_stats.queue_time: 298703603
+capture_stats.dropped_time: 1074148388
+
+
+
+ksensor.CPU0.captured: 711748
+ksensor.CPU0.dropped: 22723955
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1057
+ksensor.CPU0.cong_low: 1055
+ksensor.CPU0.cong_mid: 1055
+ksensor.CPU0.cong_high: 23432536
+ksensor.CPU0.processed: 198816
+ksensor.CPU0.decode_errors: 2
+ksensor.CPU0.total_errors: 2
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 512920
+ksensor.CPU1.decode_errors: 10
+ksensor.CPU1.total_errors: 10
+ksensor.TOTAL.captured: 711748
+ksensor.TOTAL.dropped: 22723955
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1057
+ksensor.TOTAL.cong_low: 1055
+ksensor.TOTAL.cong_mid: 1055
+ksensor.TOTAL.cong_high: 23432536
+ksensor.TOTAL.processed: 711736
+ksensor.TOTAL.decode_errors: 12
+ksensor.TOTAL.total_errors: 12
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 2490183
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 61992.649855
+dag.total_time: 40.169004
+dag.packets_per_second: 619926.498551
+dag.total_bytes_sent_to_dag_card: 1992146400 (1899.86 MiB)
+dag.approx.average_speed: 396.75 Mbps (49.59 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1593719258
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 24901834
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 24901856
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 160
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 4980366
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 4980389
+ksensor_eth2.nic_irqs: 2556080
+ksensor_eth2.nic_avoided_irqs: 2424309
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2424
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 28
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1593719322
+IF-MIB::ifOutUcastPkts.10108: 24901834
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2203
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2361
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1593717120
+IF-MIB::ifInUcastPkts.10112: 24901830
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2361
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 16718388522
+sched_stats.2: 40257008923
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2478645
+capture_stats.insufficient_quota: 15558
+capture_stats.hard_interrupt_cycles: 344
+capture_stats.polling_cycles: 9161
+capture_stats.soft_interrupt_cycles: 9645
+capture_stats.hard_total_time: 773836289
+capture_stats.polling_total_time: 41394917735
+capture_stats.soft_total_time: 41879869059
+capture_stats.polling_times: 2494203
+capture_stats.hard_interrupt_times: 2478645
+capture_stats.soft_interrupt_times: 2478646
+capture_stats.polling_packets: 24901863
+capture_stats.polling_average: 16596
+capture_stats.hard_interrupt_average: 312
+capture_stats.soft_interrupt_average: 16896
+capture_stats.dequeue_time: 162367020
+capture_stats.queue_time: 306650935
+capture_stats.dropped_time: 1689477870
+
+
+
+ksensor.CPU0.captured: 693814
+ksensor.CPU0.dropped: 24208050
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1057
+ksensor.CPU0.cong_low: 1051
+ksensor.CPU0.cong_mid: 1051
+ksensor.CPU0.cong_high: 24898705
+ksensor.CPU0.processed: 177625
+ksensor.CPU0.decode_errors: 2
+ksensor.CPU0.total_errors: 2
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 516180
+ksensor.CPU1.decode_errors: 7
+ksensor.CPU1.total_errors: 7
+ksensor.TOTAL.captured: 693814
+ksensor.TOTAL.dropped: 24208050
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1057
+ksensor.TOTAL.cong_low: 1051
+ksensor.TOTAL.cong_mid: 1051
+ksensor.TOTAL.cong_high: 24898705
+ksensor.TOTAL.processed: 693805
+ksensor.TOTAL.decode_errors: 9
+ksensor.TOTAL.total_errors: 9
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 2656179
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 66126.586287
+dag.total_time: 40.168095
+dag.packets_per_second: 661265.862870
+dag.total_bytes_sent_to_dag_card: 2124943200 (2026.50 MiB)
+dag.approx.average_speed: 423.21 Mbps (52.90 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1699956698
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 26561794
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 26561816
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 233
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 5312358
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 5312379
+ksensor_eth2.nic_irqs: 2685110
+ksensor_eth2.nic_avoided_irqs: 2627269
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2202
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 25
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1699956762
+IF-MIB::ifOutUcastPkts.10108: 26561794
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2361
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2203
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1699954560
+IF-MIB::ifInUcastPkts.10112: 26561790
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2203
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 25
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 14901297683
+sched_stats.2: 40257863204
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2643080
+capture_stats.insufficient_quota: 18698
+capture_stats.hard_interrupt_cycles: 1685
+capture_stats.polling_cycles: 15459
+capture_stats.soft_interrupt_cycles: 18012
+capture_stats.hard_total_time: 820719451
+capture_stats.polling_total_time: 44608109549
+capture_stats.soft_total_time: 45115014790
+capture_stats.polling_times: 2661778
+capture_stats.hard_interrupt_times: 2643080
+capture_stats.soft_interrupt_times: 2643080
+capture_stats.polling_packets: 26561820
+capture_stats.polling_average: 16758
+capture_stats.hard_interrupt_average: 310
+capture_stats.soft_interrupt_average: 17069
+capture_stats.dequeue_time: 3011852649
+capture_stats.queue_time: 288864208
+capture_stats.dropped_time: 2391720225
+
+
+
+ksensor.CPU0.captured: 673074
+ksensor.CPU0.dropped: 25888747
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1051
+ksensor.CPU0.cong_low: 1049
+ksensor.CPU0.cong_mid: 1048
+ksensor.CPU0.cong_high: 26558673
+ksensor.CPU0.processed: 153347
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 519720
+ksensor.CPU1.decode_errors: 7
+ksensor.CPU1.total_errors: 7
+ksensor.TOTAL.captured: 673074
+ksensor.TOTAL.dropped: 25888747
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1051
+ksensor.TOTAL.cong_low: 1049
+ksensor.TOTAL.cong_mid: 1048
+ksensor.TOTAL.cong_high: 26558673
+ksensor.TOTAL.processed: 673067
+ksensor.TOTAL.decode_errors: 7
+ksensor.TOTAL.total_errors: 7
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 2845629
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 70839.654697
+dag.total_time: 40.170001
+dag.packets_per_second: 708396.546965
+dag.total_bytes_sent_to_dag_card: 2276503200 (2171.04 MiB)
+dag.approx.average_speed: 453.37 Mbps (56.67 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1821204856
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 28456294
+ksensor_eth2.rx_mcast_packets: 26
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 28456317
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 485
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 5691258
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 5691281
+ksensor_eth2.nic_irqs: 2632695
+ksensor_eth2.nic_avoided_irqs: 3058586
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2360
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1821204920
+IF-MIB::ifOutUcastPkts.10108: 28456294
+IF-MIB::ifOutNUcastPkts.10108: 27
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2361
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2203
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1821202560
+IF-MIB::ifInUcastPkts.10112: 28456290
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2361
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 12486124065
+sched_stats.2: 40260252662
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2814146
+capture_stats.insufficient_quota: 31275
+capture_stats.hard_interrupt_cycles: 2168
+capture_stats.polling_cycles: 15098
+capture_stats.soft_interrupt_cycles: 17887
+capture_stats.hard_total_time: 873687446
+capture_stats.polling_total_time: 48889630897
+capture_stats.soft_total_time: 49424996285
+capture_stats.polling_times: 2845421
+capture_stats.hard_interrupt_times: 2814146
+capture_stats.soft_interrupt_times: 2814146
+capture_stats.polling_packets: 28456322
+capture_stats.polling_average: 17181
+capture_stats.hard_interrupt_average: 310
+capture_stats.soft_interrupt_average: 17563
+capture_stats.dequeue_time: 1816160338
+capture_stats.queue_time: 298754620
+capture_stats.dropped_time: 3248373135
+
+
+
+ksensor.CPU0.captured: 640267
+ksensor.CPU0.dropped: 27816056
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1048
+ksensor.CPU0.cong_low: 1046
+ksensor.CPU0.cong_mid: 1045
+ksensor.CPU0.cong_high: 28453184
+ksensor.CPU0.processed: 120288
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 519972
+ksensor.CPU1.decode_errors: 7
+ksensor.CPU1.total_errors: 7
+ksensor.TOTAL.captured: 640267
+ksensor.TOTAL.dropped: 27816056
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1048
+ksensor.TOTAL.cong_low: 1046
+ksensor.TOTAL.cong_mid: 1045
+ksensor.TOTAL.cong_high: 28453184
+ksensor.TOTAL.processed: 640260
+ksensor.TOTAL.decode_errors: 7
+ksensor.TOTAL.total_errors: 7
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 3063960
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 76274.913613
+dag.total_time: 40.169957
+dag.packets_per_second: 762749.136127
+dag.total_bytes_sent_to_dag_card: 2451168000 (2337.62 MiB)
+dag.approx.average_speed: 488.16 Mbps (61.02 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 1960936602
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 30639605
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 30639627
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 684
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 6127920
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 6127943
+ksensor_eth2.nic_irqs: 1818846
+ksensor_eth2.nic_avoided_irqs: 4309097
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2424
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 1960936666
+IF-MIB::ifOutUcastPkts.10108: 30639605
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2267
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2425
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 1960934400
+IF-MIB::ifInUcastPkts.10112: 30639600
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2425
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 9944913720
+sched_stats.2: 40256658368
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2950380
+capture_stats.insufficient_quota: 104185
+capture_stats.hard_interrupt_cycles: 2613
+capture_stats.polling_cycles: 16136
+capture_stats.soft_interrupt_cycles: 18868
+capture_stats.hard_total_time: 919634270
+capture_stats.polling_total_time: 53382871503
+capture_stats.soft_total_time: 53962077535
+capture_stats.polling_times: 3054565
+capture_stats.hard_interrupt_times: 2950380
+capture_stats.soft_interrupt_times: 2950380
+capture_stats.polling_packets: 30639631
+capture_stats.polling_average: 17476
+capture_stats.hard_interrupt_average: 311
+capture_stats.soft_interrupt_average: 18289
+capture_stats.dequeue_time: 4214031209
+capture_stats.queue_time: 302165906
+capture_stats.dropped_time: 4272242867
+
+
+
+ksensor.CPU0.captured: 598514
+ksensor.CPU0.dropped: 30041117
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1046
+ksensor.CPU0.cong_low: 1042
+ksensor.CPU0.cong_mid: 1044
+ksensor.CPU0.cong_high: 30636499
+ksensor.CPU0.processed: 87177
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 511332
+ksensor.CPU1.decode_errors: 5
+ksensor.CPU1.total_errors: 5
+ksensor.TOTAL.captured: 598514
+ksensor.TOTAL.dropped: 30041117
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1046
+ksensor.TOTAL.cong_low: 1042
+ksensor.TOTAL.cong_mid: 1044
+ksensor.TOTAL.cong_high: 30636499
+ksensor.TOTAL.processed: 598509
+ksensor.TOTAL.decode_errors: 5
+ksensor.TOTAL.total_errors: 5
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 3318222
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 82606.379031
+dag.total_time: 40.169077
+dag.packets_per_second: 826063.790313
+dag.total_bytes_sent_to_dag_card: 2654577600 (2531.60 MiB)
+dag.approx.average_speed: 528.68 Mbps (66.09 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 2123664060
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 33182225
+ksensor_eth2.rx_mcast_packets: 25
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 33182248
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 0
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 793
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 6636444
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 6636472
+ksensor_eth2.nic_irqs: 520845
+ksensor_eth2.nic_avoided_irqs: 6115627
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 1950
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 25
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 2123664124
+IF-MIB::ifOutUcastPkts.10108: 33182225
+IF-MIB::ifOutNUcastPkts.10108: 26
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2044
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 26
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 1886
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 24
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 2123662080
+IF-MIB::ifInUcastPkts.10112: 33182220
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 1886
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 24
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 7089420185
+sched_stats.2: 40256525231
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 2879227
+capture_stats.insufficient_quota: 419447
+capture_stats.hard_interrupt_cycles: 866
+capture_stats.polling_cycles: 9153
+capture_stats.soft_interrupt_cycles: 9625
+capture_stats.hard_total_time: 896225745
+capture_stats.polling_total_time: 58491874038
+capture_stats.soft_total_time: 59098551194
+capture_stats.polling_times: 3298674
+capture_stats.hard_interrupt_times: 2879227
+capture_stats.soft_interrupt_times: 2879227
+capture_stats.polling_packets: 33182252
+capture_stats.polling_average: 17731
+capture_stats.hard_interrupt_average: 311
+capture_stats.soft_interrupt_average: 20525
+capture_stats.dequeue_time: 3048197622
+capture_stats.queue_time: 311755386
+capture_stats.dropped_time: 1073245294
+
+
+
+ksensor.CPU0.captured: 567412
+ksensor.CPU0.dropped: 32614841
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1047
+ksensor.CPU0.cong_low: 1041
+ksensor.CPU0.cong_mid: 1041
+ksensor.CPU0.cong_high: 33179124
+ksensor.CPU0.processed: 51891
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 515514
+ksensor.CPU1.decode_errors: 7
+ksensor.CPU1.total_errors: 7
+ksensor.TOTAL.captured: 567412
+ksensor.TOTAL.dropped: 32614841
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1047
+ksensor.TOTAL.cong_low: 1041
+ksensor.TOTAL.cong_mid: 1041
+ksensor.TOTAL.cong_high: 33179124
+ksensor.TOTAL.processed: 567405
+ksensor.TOTAL.decode_errors: 7
+ksensor.TOTAL.total_errors: 7
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 3618975
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 90099.450912
+dag.total_time: 40.166449
+dag.packets_per_second: 900994.509124
+dag.total_bytes_sent_to_dag_card: 2895180000 (2761.06 MiB)
+dag.approx.average_speed: 576.64 Mbps (72.08 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 2316146360
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 36189754
+ksensor_eth2.rx_mcast_packets: 27
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 36189778
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 515
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 2
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 1217
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 7237949
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 2
+ksensor_eth2.ring_status_update: 7237981
+ksensor_eth2.nic_irqs: 163336
+ksensor_eth2.nic_avoided_irqs: 7074645
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2939
+IF-MIB::ifOutUcastPkts.10106: 5
+IF-MIB::ifOutNUcastPkts.10106: 29
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 515
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 2
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 2316146424
+IF-MIB::ifOutUcastPkts.10108: 36189755
+IF-MIB::ifOutNUcastPkts.10108: 27
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2782
+IF-MIB::ifOutUcastPkts.10110: 5
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2940
+IF-MIB::ifOutUcastPkts.10111: 5
+IF-MIB::ifOutNUcastPkts.10111: 29
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 2316144000
+IF-MIB::ifInUcastPkts.10112: 36189750
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2940
+IF-MIB::ifOutUcastPkts.10112: 5
+IF-MIB::ifOutNUcastPkts.10112: 29
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 3931058089
+sched_stats.2: 40257372195
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 0
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 1897325
+capture_stats.insufficient_quota: 1658276
+capture_stats.hard_interrupt_cycles: 732
+capture_stats.polling_cycles: 9287
+capture_stats.soft_interrupt_cycles: 9714
+capture_stats.hard_total_time: 590181724
+capture_stats.polling_total_time: 64293398081
+capture_stats.soft_total_time: 64919606390
+capture_stats.polling_times: 3555601
+capture_stats.hard_interrupt_times: 1897325
+capture_stats.soft_interrupt_times: 1897325
+capture_stats.polling_packets: 36189783
+capture_stats.polling_average: 18082
+capture_stats.hard_interrupt_average: 311
+capture_stats.soft_interrupt_average: 34216
+capture_stats.dequeue_time: 1905033906
+capture_stats.queue_time: 333818451
+capture_stats.dropped_time: 2370252673
+
+
+
+ksensor.CPU0.captured: 542929
+ksensor.CPU0.dropped: 35646855
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1046
+ksensor.CPU0.cong_low: 1039
+ksensor.CPU0.cong_mid: 1040
+ksensor.CPU0.cong_high: 36186659
+ksensor.CPU0.processed: 23605
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 2
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 2
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 519319
+ksensor.CPU1.decode_errors: 7
+ksensor.CPU1.total_errors: 7
+ksensor.TOTAL.captured: 542931
+ksensor.TOTAL.dropped: 35646855
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1048
+ksensor.TOTAL.cong_low: 1039
+ksensor.TOTAL.cong_mid: 1040
+ksensor.TOTAL.cong_high: 36186659
+ksensor.TOTAL.processed: 542924
+ksensor.TOTAL.decode_errors: 7
+ksensor.TOTAL.total_errors: 7
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 3981019
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 99102.690534
+dag.total_time: 40.170645
+dag.packets_per_second: 991026.905343
+dag.total_bytes_sent_to_dag_card: 3184815200 (3037.28 MiB)
+dag.approx.average_speed: 634.26 Mbps (79.28 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 2547854298
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 39810194
+ksensor_eth2.rx_mcast_packets: 24
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 39810216
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 1947
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 0
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 7962038
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 7962061
+ksensor_eth2.nic_irqs: 38472
+ksensor_eth2.nic_avoided_irqs: 7923589
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2202
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 25
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 2547854362
+IF-MIB::ifOutUcastPkts.10108: 39810194
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2203
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2203
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 2547852160
+IF-MIB::ifInUcastPkts.10112: 39810190
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2203
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 25
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 1141619789
+sched_stats.2: 40251551700
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 7732
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 527437
+capture_stats.insufficient_quota: 3033175
+capture_stats.hard_interrupt_cycles: 2619
+capture_stats.polling_cycles: 15720
+capture_stats.soft_interrupt_cycles: 18371
+capture_stats.hard_total_time: 164650906
+capture_stats.polling_total_time: 69542378983
+capture_stats.soft_total_time: 70149130028
+capture_stats.polling_times: 3560612
+capture_stats.hard_interrupt_times: 527437
+capture_stats.soft_interrupt_times: 535169
+capture_stats.polling_packets: 39810221
+capture_stats.polling_average: 19531
+capture_stats.hard_interrupt_average: 312
+capture_stats.soft_interrupt_average: 131078
+capture_stats.dequeue_time: 4223676588
+capture_stats.queue_time: 330834368
+capture_stats.dropped_time: 3895194232
+
+
+
+ksensor.CPU0.captured: 530893
+ksensor.CPU0.dropped: 39279328
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1042
+ksensor.CPU0.cong_low: 1038
+ksensor.CPU0.cong_mid: 1038
+ksensor.CPU0.cong_high: 39807103
+ksensor.CPU0.processed: 6679
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 524209
+ksensor.CPU1.decode_errors: 5
+ksensor.CPU1.total_errors: 5
+ksensor.TOTAL.captured: 530893
+ksensor.TOTAL.dropped: 39279328
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1042
+ksensor.TOTAL.cong_low: 1038
+ksensor.TOTAL.cong_mid: 1038
+ksensor.TOTAL.cong_high: 39807103
+ksensor.TOTAL.processed: 530888
+ksensor.TOTAL.decode_errors: 5
+ksensor.TOTAL.total_errors: 5
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 4421972
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 110084.503959
+dag.total_time: 40.168887
+dag.packets_per_second: 1100845.039595
+dag.total_bytes_sent_to_dag_card: 3537577600 (3373.70 MiB)
+dag.approx.average_speed: 704.54 Mbps (88.07 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 2830064376
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 44219724
+ksensor_eth2.rx_mcast_packets: 26
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 44219747
+ksensor_eth2.rx_65_to_127_octet_packets: 2
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 16964281
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 12263454
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 6388184
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 6394040
+ksensor_eth2.nic_irqs: 4185
+ksensor_eth2.nic_avoided_irqs: 6389855
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2202
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 25
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 2830064440
+IF-MIB::ifOutUcastPkts.10108: 44219724
+IF-MIB::ifOutNUcastPkts.10108: 27
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2361
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2203
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 2830062080
+IF-MIB::ifInUcastPkts.10112: 44219720
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2203
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 25
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 14181941333
+sched_stats.2: 40259800608
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 88035
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 58797
+capture_stats.insufficient_quota: 760024
+capture_stats.hard_interrupt_cycles: 2645
+capture_stats.polling_cycles: 15999
+capture_stats.soft_interrupt_cycles: 18811
+capture_stats.hard_total_time: 18467391
+capture_stats.polling_total_time: 46644864986
+capture_stats.soft_total_time: 46802285983
+capture_stats.polling_times: 818821
+capture_stats.hard_interrupt_times: 58797
+capture_stats.soft_interrupt_times: 146832
+capture_stats.polling_packets: 31956299
+capture_stats.polling_average: 56965
+capture_stats.hard_interrupt_average: 314
+capture_stats.soft_interrupt_average: 318747
+capture_stats.dequeue_time: 3933334326
+capture_stats.queue_time: 322888553
+capture_stats.dropped_time: 474128554
+
+
+
+ksensor.CPU0.captured: 697556
+ksensor.CPU0.dropped: 31258744
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1042
+ksensor.CPU0.cong_low: 1037
+ksensor.CPU0.cong_mid: 1072
+ksensor.CPU0.cong_high: 31953149
+ksensor.CPU0.processed: 178475
+ksensor.CPU0.decode_errors: 1
+ksensor.CPU0.total_errors: 1
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 519076
+ksensor.CPU1.decode_errors: 4
+ksensor.CPU1.total_errors: 4
+ksensor.TOTAL.captured: 697556
+ksensor.TOTAL.dropped: 31258744
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1042
+ksensor.TOTAL.cong_low: 1037
+ksensor.TOTAL.cong_mid: 1072
+ksensor.TOTAL.cong_high: 31953149
+ksensor.TOTAL.processed: 697551
+ksensor.TOTAL.decode_errors: 5
+ksensor.TOTAL.total_errors: 5
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 4973724
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 123827.870804
+dag.total_time: 40.166434
+dag.packets_per_second: 1238278.708038
+dag.total_bytes_sent_to_dag_card: 3978979200 (3794.65 MiB)
+dag.approx.average_speed: 792.50 Mbps (99.06 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 3183185562
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 49737244
+ksensor_eth2.rx_mcast_packets: 25
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 49737267
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 1
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 19587077
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 19649117
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 6014380
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 6020676
+ksensor_eth2.nic_irqs: 12
+ksensor_eth2.nic_avoided_irqs: 6020664
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 2360
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 27
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 3183185562
+IF-MIB::ifOutUcastPkts.10108: 49737244
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2203
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 25
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 2361
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 27
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 3183183360
+IF-MIB::ifInUcastPkts.10112: 49737240
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 2361
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 27
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 16383010302
+sched_stats.2: 40256987470
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 100290
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 14
+capture_stats.insufficient_quota: 501496
+capture_stats.hard_interrupt_cycles: 2675
+capture_stats.polling_cycles: 15319
+capture_stats.soft_interrupt_cycles: 17800
+capture_stats.hard_total_time: 18369
+capture_stats.polling_total_time: 42776108317
+capture_stats.soft_total_time: 42881646469
+capture_stats.polling_times: 501510
+capture_stats.hard_interrupt_times: 14
+capture_stats.soft_interrupt_times: 100304
+capture_stats.polling_packets: 30088156
+capture_stats.polling_average: 85294
+capture_stats.hard_interrupt_average: 1312
+capture_stats.soft_interrupt_average: 427516
+capture_stats.dequeue_time: 1186862452
+capture_stats.queue_time: 321805678
+capture_stats.dropped_time: 3953887832
+
+
+
+ksensor.CPU0.captured: 718984
+ksensor.CPU0.dropped: 29369173
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1044
+ksensor.CPU0.cong_low: 1036
+ksensor.CPU0.cong_mid: 1081
+ksensor.CPU0.cong_high: 30084996
+ksensor.CPU0.processed: 203535
+ksensor.CPU0.decode_errors: 1
+ksensor.CPU0.total_errors: 1
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 515441
+ksensor.CPU1.decode_errors: 7
+ksensor.CPU1.total_errors: 7
+ksensor.TOTAL.captured: 718984
+ksensor.TOTAL.dropped: 29369173
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1044
+ksensor.TOTAL.cong_low: 1036
+ksensor.TOTAL.cong_mid: 1081
+ksensor.TOTAL.cong_high: 30084996
+ksensor.TOTAL.processed: 718976
+ksensor.TOTAL.decode_errors: 8
+ksensor.TOTAL.total_errors: 8
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+
+
+
+dag.sent_bursts: 6034574
+dag.burst_size: 800
+dag.erf_size: 80
+dag.burst_throughput: 148387.225592
+dag.total_time: 40.667746
+dag.packets_per_second: 1483872.255915
+dag.total_bytes_sent_to_dag_card: 4827659200 (4604.01 MiB)
+dag.approx.average_speed: 949.68 Mbps (118.71 MiB/s)
+
+
+
+dag.uname: Linux klon 2.6.15 #2 SMP Wed Feb 28 15:14:04 CET 2007 x86_64 GNU/Linux
+dag.nr_cpus: 4
+dag.cpu_speed (MHz): 1596.481
+dag.arch_bits: 64-bit
+dag_eth2.driver: 
+dag_eth2.speed (Mbps): 
+
+
+
+ksensor.uname: Linux opteron 2.6.23-ksensor-v0.2-stats-git #1 SMP Tue Oct 9 17:42:22 CEST 2012 x86_64 GNU/Linux
+ksensor.nr_cpus: 2
+ksensor.cpu_speed (MHz): 1793.502
+ksensor.arch_bits: 64-bit
+ksensor_eth2.driver: tg3
+ksensor_eth2.speed (Mbps): 1000Mb/s
+ksensor_eth2.rx_octets: 3862129118
+ksensor_eth2.rx_fragments: 0
+ksensor_eth2.rx_ucast_packets: 60345744
+ksensor_eth2.rx_mcast_packets: 23
+ksensor_eth2.rx_bcast_packets: 0
+ksensor_eth2.rx_fcs_errors: 0
+ksensor_eth2.rx_align_errors: 0
+ksensor_eth2.rx_xon_pause_rcvd: 0
+ksensor_eth2.rx_xoff_pause_rcvd: 0
+ksensor_eth2.rx_mac_ctrl_rcvd: 0
+ksensor_eth2.rx_xoff_entered: 0
+ksensor_eth2.rx_frame_too_long_errors: 0
+ksensor_eth2.rx_jabbers: 0
+ksensor_eth2.rx_undersize_packets: 0
+ksensor_eth2.rx_in_length_errors: 0
+ksensor_eth2.rx_out_length_errors: 0
+ksensor_eth2.rx_64_or_less_octet_packets: 60345766
+ksensor_eth2.rx_65_to_127_octet_packets: 1
+ksensor_eth2.rx_128_to_255_octet_packets: 0
+ksensor_eth2.rx_256_to_511_octet_packets: 0
+ksensor_eth2.rx_512_to_1023_octet_packets: 0
+ksensor_eth2.rx_1024_to_1522_octet_packets: 0
+ksensor_eth2.rx_1523_to_2047_octet_packets: 0
+ksensor_eth2.rx_2048_to_4095_octet_packets: 0
+ksensor_eth2.rx_4096_to_8191_octet_packets: 0
+ksensor_eth2.rx_8192_to_9022_octet_packets: 0
+ksensor_eth2.tx_octets: 0
+ksensor_eth2.tx_collisions: 0
+ksensor_eth2.tx_xon_sent: 0
+ksensor_eth2.tx_xoff_sent: 0
+ksensor_eth2.tx_flow_control: 0
+ksensor_eth2.tx_mac_errors: 0
+ksensor_eth2.tx_single_collisions: 0
+ksensor_eth2.tx_mult_collisions: 0
+ksensor_eth2.tx_deferred: 0
+ksensor_eth2.tx_excessive_collisions: 0
+ksensor_eth2.tx_late_collisions: 0
+ksensor_eth2.tx_collide_2times: 0
+ksensor_eth2.tx_collide_3times: 0
+ksensor_eth2.tx_collide_4times: 0
+ksensor_eth2.tx_collide_5times: 0
+ksensor_eth2.tx_collide_6times: 0
+ksensor_eth2.tx_collide_7times: 0
+ksensor_eth2.tx_collide_8times: 0
+ksensor_eth2.tx_collide_9times: 0
+ksensor_eth2.tx_collide_10times: 0
+ksensor_eth2.tx_collide_11times: 0
+ksensor_eth2.tx_collide_12times: 0
+ksensor_eth2.tx_collide_13times: 0
+ksensor_eth2.tx_collide_14times: 0
+ksensor_eth2.tx_collide_15times: 0
+ksensor_eth2.tx_ucast_packets: 0
+ksensor_eth2.tx_mcast_packets: 0
+ksensor_eth2.tx_bcast_packets: 0
+ksensor_eth2.tx_carrier_sense_errors: 0
+ksensor_eth2.tx_discards: 0
+ksensor_eth2.tx_errors: 0
+ksensor_eth2.dma_writeq_full: 19749734
+ksensor_eth2.dma_write_prioq_full: 0
+ksensor_eth2.rxbds_empty: 0
+ksensor_eth2.rx_discards: 29926907
+ksensor_eth2.rx_errors: 0
+ksensor_eth2.rx_threshold_hit: 6080592
+ksensor_eth2.dma_readq_full: 0
+ksensor_eth2.dma_read_prioq_full: 0
+ksensor_eth2.tx_comp_queue_full: 0
+ksensor_eth2.ring_set_send_prod_index: 0
+ksensor_eth2.ring_status_update: 6086922
+ksensor_eth2.nic_irqs: 6
+ksensor_eth2.nic_avoided_irqs: 6086916
+ksensor_eth2.nic_tx_threshold_hit: 0
+
+
+
+IF-MIB::ifInOctets.10105: 0
+IF-MIB::ifInUcastPkts.10105: 0
+IF-MIB::ifInNUcastPkts.10105: 0
+IF-MIB::ifInDiscards.10105: 0
+IF-MIB::ifInErrors.10105: 0
+IF-MIB::ifInUnknownProtos.10105: 0
+IF-MIB::ifOutOctets.10105: 0
+IF-MIB::ifOutUcastPkts.10105: 0
+IF-MIB::ifOutNUcastPkts.10105: 0
+IF-MIB::ifOutDiscards.10105: 0
+IF-MIB::ifOutErrors.10105: 0
+IF-MIB::ifOutQLen.10105: 0
+IF-MIB::ifInOctets.10106: 0
+IF-MIB::ifInUcastPkts.10106: 0
+IF-MIB::ifInNUcastPkts.10106: 0
+IF-MIB::ifInDiscards.10106: 0
+IF-MIB::ifInErrors.10106: 0
+IF-MIB::ifInUnknownProtos.10106: 0
+IF-MIB::ifOutOctets.10106: 1886
+IF-MIB::ifOutUcastPkts.10106: 4
+IF-MIB::ifOutNUcastPkts.10106: 25
+IF-MIB::ifOutDiscards.10106: 0
+IF-MIB::ifOutErrors.10106: 0
+IF-MIB::ifOutQLen.10106: 0
+IF-MIB::ifInOctets.10108: 0
+IF-MIB::ifInUcastPkts.10108: 0
+IF-MIB::ifInNUcastPkts.10108: 0
+IF-MIB::ifInDiscards.10108: 0
+IF-MIB::ifInErrors.10108: 0
+IF-MIB::ifInUnknownProtos.10108: 0
+IF-MIB::ifOutOctets.10108: 3862129246
+IF-MIB::ifOutUcastPkts.10108: 60345744
+IF-MIB::ifOutNUcastPkts.10108: 25
+IF-MIB::ifOutDiscards.10108: 0
+IF-MIB::ifOutErrors.10108: 0
+IF-MIB::ifOutQLen.10108: 0
+IF-MIB::ifInOctets.10110: 0
+IF-MIB::ifInUcastPkts.10110: 0
+IF-MIB::ifInNUcastPkts.10110: 0
+IF-MIB::ifInDiscards.10110: 0
+IF-MIB::ifInErrors.10110: 0
+IF-MIB::ifInUnknownProtos.10110: 0
+IF-MIB::ifOutOctets.10110: 2044
+IF-MIB::ifOutUcastPkts.10110: 4
+IF-MIB::ifOutNUcastPkts.10110: 27
+IF-MIB::ifOutDiscards.10110: 0
+IF-MIB::ifOutErrors.10110: 0
+IF-MIB::ifOutQLen.10110: 0
+IF-MIB::ifInOctets.10111: 0
+IF-MIB::ifInUcastPkts.10111: 0
+IF-MIB::ifInNUcastPkts.10111: 0
+IF-MIB::ifInDiscards.10111: 0
+IF-MIB::ifInErrors.10111: 0
+IF-MIB::ifInUnknownProtos.10111: 0
+IF-MIB::ifOutOctets.10111: 1886
+IF-MIB::ifOutUcastPkts.10111: 4
+IF-MIB::ifOutNUcastPkts.10111: 25
+IF-MIB::ifOutDiscards.10111: 0
+IF-MIB::ifOutErrors.10111: 0
+IF-MIB::ifOutQLen.10111: 0
+IF-MIB::ifInOctets.10112: 3862127360
+IF-MIB::ifInUcastPkts.10112: 60345740
+IF-MIB::ifInNUcastPkts.10112: 0
+IF-MIB::ifInDiscards.10112: 0
+IF-MIB::ifInErrors.10112: 0
+IF-MIB::ifInUnknownProtos.10112: 0
+IF-MIB::ifOutOctets.10112: 1886
+IF-MIB::ifOutUcastPkts.10112: 4
+IF-MIB::ifOutNUcastPkts.10112: 25
+IF-MIB::ifOutDiscards.10112: 0
+IF-MIB::ifOutErrors.10112: 0
+IF-MIB::ifOutQLen.10112: 0
+
+
+
+sched_stats.1: 16605738537
+sched_stats.2: 40751401998
+
+
+
+capture_stats.stats_iface eth2:
+capture_stats.output_for_budget: 101395
+capture_stats.output_for_jiffies: 0
+capture_stats.enough_quota: 6
+capture_stats.insufficient_quota: 507128
+capture_stats.hard_interrupt_cycles: 554
+capture_stats.polling_cycles: 9562
+capture_stats.soft_interrupt_cycles: 10238
+capture_stats.hard_total_time: 9712
+capture_stats.polling_total_time: 43238435289
+capture_stats.soft_total_time: 43345308458
+capture_stats.polling_times: 507134
+capture_stats.hard_interrupt_times: 6
+capture_stats.soft_interrupt_times: 101401
+capture_stats.polling_packets: 30418862
+capture_stats.polling_average: 85260
+capture_stats.hard_interrupt_average: 1618
+capture_stats.soft_interrupt_average: 427464
+capture_stats.dequeue_time: 3127185243
+capture_stats.queue_time: 324314522
+capture_stats.dropped_time: 4136490153
+
+
+
+ksensor.CPU0.captured: 727059
+ksensor.CPU0.dropped: 29691805
+ksensor.CPU0.congestions: 0
+ksensor.CPU0.cong_off: 1042
+ksensor.CPU0.cong_low: 1191
+ksensor.CPU0.cong_mid: 2115
+ksensor.CPU0.cong_high: 30414516
+ksensor.CPU0.processed: 210079
+ksensor.CPU0.decode_errors: 0
+ksensor.CPU0.total_errors: 0
+ksensor.CPU1.captured: 0
+ksensor.CPU1.dropped: 0
+ksensor.CPU1.congestions: 0
+ksensor.CPU1.cong_off: 0
+ksensor.CPU1.cong_low: 0
+ksensor.CPU1.cong_mid: 0
+ksensor.CPU1.cong_high: 0
+ksensor.CPU1.processed: 516975
+ksensor.CPU1.decode_errors: 5
+ksensor.CPU1.total_errors: 5
+ksensor.TOTAL.captured: 727059
+ksensor.TOTAL.dropped: 29691805
+ksensor.TOTAL.congestions: 0
+ksensor.TOTAL.cong_off: 1042
+ksensor.TOTAL.cong_low: 1191
+ksensor.TOTAL.cong_mid: 2115
+ksensor.TOTAL.cong_high: 30414516
+ksensor.TOTAL.processed: 727054
+ksensor.TOTAL.decode_errors: 5
+ksensor.TOTAL.total_errors: 5
+ksensor.cur_packlen: 0
+ksensor.limit_packlen: 4096
+ksensor.thres_packlen: 2048
+
+
+
+#############################################
+

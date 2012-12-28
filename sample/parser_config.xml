@@ -1,0 +1,14 @@
+<conf>
+	<parameters>
+		<parameter name="dag.total_time"/>
+		<parameter name="dag.packets_per_second"/>
+		<parameter name="IF-MIB::ifOutUcastPkts.10106"/>
+		<parameter name="IF-MIB::ifOutNUcastPkts.10106"/>
+		<parameter name="IF-MIB::ifInUcastPkts.10112"/> 
+		<parameter name="IF-MIB::ifOutNUcastPkts.10112"/>
+		<parameter name="adviser.libpcap_recv"/>  
+		<parameter name="adviser.libpcap_drop"/>
+		<parameter name="adviser.libpcap_ifdrop"/>
+		<parameter name="adviser.adviser_recv"/>
+	</parameters>
+</conf>
