@@ -49,8 +49,8 @@ class LogFile:
 				# We create a tuple from the line, separing attribute and value
 				temp = line.partition(sep)
 				# We check that temp[1] exits, if it doesn't, this is not a real logfile
-				#+I found that the arch currently is has a bug because outputs this:
-				#+capture_stats.stats_iface eth2: 
+				# I found that the arch currently is has a bug because outputs this:
+				# capture_stats.stats_iface eth2: 
 				if temp[1] == "":
 					# We split it from the space
 					temp = line.rpartition(" ")
@@ -184,22 +184,30 @@ class XMLFile:
 		# We first parse the xml file
 		self.dom = minidom.parse(xml_file)
 		# Now we check that we have a valid xml, using the dtd defined
-		# in the docs
+		# in the docs, we initialize our self.dtd
 		self.dtd = self.__doc__.partition("<!DOCTYPE conf [")[2].partition("]>")[0].expandtabs(0)
+		# We check the xml
 		self._check_xml(xml_file)
+		# We now will 
 		
 	def _check_xml(self,xml_file):
 		"""
 		Writes the dtd in /tmp/parser.dtd and checks received xml against it,
 		exiting from the program if check fails
 		"""
+		# Open the file in overwrite mode in a tmpfs
 		dtd_file = open("/tmp/parser.dtd","w")
+		# We write the dtd content
 		dtd_file.write(self.dtd)
+		# And we close it
 		dtd_file.close()
 		
+		# We call xmllint to check against the dtd
 		if 0 != subprocess.call(["xmllint", "--noout", "--dtdvalid", "/tmp/parser.dtd",xml_file.name]):
+			# If it failed, we will suppose that the xml didn't pass the check
 			print("Use /tmp/parser.dtd to check your xml's syntax with:")
 			print("\txmllint --noout --dtdvalid /tmp/parser.dtd xmlfile")
+			# And we exit
 			exit()
 
 	def get_attributes(self):
