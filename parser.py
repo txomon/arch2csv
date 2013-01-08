@@ -95,6 +95,19 @@ class LogFile:
 		"""
 		return self.dictionary.keys()
 
+class Operations:
+
+	def operations_list_to_string(self,operations):
+		""" (list | str) -> str
+		The function returns a plain string of the inner lists
+		
+		>>> _operations_list_to_string(['a','+',[['b','+','d'],'*','c']])
+		'(a+((b+d)*c))'
+		"""
+		if type(operations) == list:
+			return "("+ self.operations_list_to_string(operations[0]) + operations[1] + self.operations_list_to_string(operations[2]) + ")"
+		elif type(operations) == str:
+			return operations
 
 class OutFile:
 	"""
@@ -182,6 +195,8 @@ class XMLFile:
 		Receives the xml_file and makes a sanitycheck on the xml file
 		"""
 
+		self.rows = []
+		self.parameters = {}
 		# We first parse the xml file
 		self.dom = minidom.parse(xml_file)
 
@@ -217,50 +232,101 @@ class XMLFile:
 			# And we exit
 			exit()
 
-	def _operations_list_to_string(self,operations):
-		""" (list | str) -> str
-		The function returns a plain string of the inner lists
-		
-		>>> _operations_list_to_string(['a','+',[['b','+','d'],'*','c']])
-		'(a+((b+d)*c))'
-		"""
-		if type(operations) == list:
-			return "("+ self._operations_list_to_string(operations[0]) + operations[1] + self._operations_list_to_string(operations[2]) + ")"
-		elif type(operations) == str:
-			return operations
-
 	def _check_xml(self):
 		# We first check that we just have one child node
-		self._delete_empty_textnodes(self.dom)
+		self.__delete_empty_textnodes(self.dom)
 		
-		#if self.dom.childNodes.length < 1:
-			#raise minidom.xml.dom.HierarchyRequestErr("There is no root tag")
-		#for childNode in self.dom.childNodes:
-			#if childNode.nodeType == 3 and (not childNode.data.strip()):
-				#self.dom.childNodes.remove(childNode)
-		## whoose name is conf
-		#if root_element.nodeName != 'conf':
-			#raise minidom.xml.dom.HierarchyRequestErr("Root tag is not <conf>")
-		## and is not empty
-		#if not root_element.hasChildNodes():
-			#raise minidom.xml.dom.HierarchyRequestErr("Root tag is empty")
-		## 
-		#if not 
+		if len(self.dom.childNodes) != 1:
+			raise minidom.xml.dom.HierarchyRequestErr("Can't find just one root tag")
+		self.__check_xml_conf(self.dom.childNodes[0])
 
-	def _delete_empty_textnodes(self,parent):
-		for child in parent.childNodes:
+	def __check_xml_conf(self,node):
+		if node.nodeType != minidom.Node.ELEMENT_NODE:
+			raise minidom.xml.dom.HierarchyRequestErr("The root node is not an element node")
+		if node.nodeName != 'conf':
+			raise minidom.xml.dom.HierarchyRequestErr("The root node is not a <conf> node")
+		if not node.hasChildNodes():
+			raise minidom.xml.dom.HierarchyRequestErr("The conf node is empty")
+		if len(node.childNodes) > 2:
+			raise minidom.xml.dom.HierarchyRequestErr("There are too many childs in conf node")
+		for child in node.childNodes:
+			if child.nodeType != minidom.Node.ELEMENT_NODE:
+				raise minidom.xml.dom.HierarchyRequestErr("conf's child node wasn't an element node: "+child.__str__())
+			elif child.nodeName == 'parameters':
+				self.__check_xml_parameters(child)
+			elif child.nodeName == 'graphs':
+				pass #not supported yet
+
+	def __check_xml_parameters(self,parameters):
+		if not parameters.hasChildNodes():
+			raise minidom.xml.dom.HierarchyRequestErr("There parameters node has no childs")
+		for parameter in parameters.childNodes:
+			if parameter.nodeType != minidom.Node.ELEMENT_NODE:
+				raise minidom.xml.dom.HierarchyRequestErr("parameters's child node wasn't an element node: "+child.__str__())
+			if parameter.nodeName != 'parameter':
+				raise minidom.xml.dom.HierarchyRequestErr("The parameters' child node is not a <parameter> node")
+			if not parameter.hasAttributes():
+				raise minidom.xml.dom.HierarchyRequestErr("The parameter node doesn't have any attribute (name required)")
+			if not parameter.hasAttribute('name'):
+				raise minidom.xml.dom.HierarchyRequestErr("The parameter node doesn't have name attribute")
+			if parameter.hasChildNodes() and parameter.hasAttribute('row'):
+				raise minidom.xml.dom.HierarchyRequestErr("The parameter node has too many source definition (row attribute and childs defined)")
+			if parameter.hasAttribute('row'):
+				self.__add_row_to_internal(parameter.getAttribute('name'),[parameter.getAttribute('row')])
+			elif parameter.hasChildNodes():
+				if len(parameter.childNodes) != 1:
+					raise minidom.xml.dom.HierarchyRequestErr("The parameter node must have just 1 <operation> child or a row attribute")
+				elif parameter.childNodes[0].nodeName == 'operation':
+					rows = self.__check_xml_operators(parameter.childNodes[0])
+					self.__add_row_to_internal(parameter.getAttribute('name'),rows)
+				else:
+					raise minidom.xml.dom.HierarchyRequestErr("The parameter node must have just 1 <operation> child or a row attribute")
+			else:
+				self.__add_row_to_internal(parameter.getAttribute('name'),[parameter.getAttribute('name')])
+
+	def __check_xml_operators(self,operation):
+		if 
+
+	def __add_row_to_internal(self,name,rows):
+		if not (type(name) == str and type(rows) == list):
+			raise TypeError("Wrong argument types")
+		if ' ' in name:
+			raise minidom.xml.dom.HierarchyRequestErr("The name '"+name+"' is not valid because can't contain spaces")
+		for row in self.__operation_list_to_row_list(rows):
+			if ' ' in row:
+				raise minidom.xml.dom.HierarchyRequestErr("The row '"+row+"' is not valid because can't contain spaces")
+			if not self.rows.__contains__(row):
+				self.rows.append(row)
+		if not name in self.parameters.keys():
+			self.parameters[name] = rows
+		else:
+			for row in rows:
+				if not self.parameters[name].__contains__(row):
+					raise minidom.xml.dom.HierarchyRequestErr("The name '"+name+"' has different "
+					"data definitions\n("+rows.__str__()+")\n VS \n("+self.parameters[name].__str__()+")")
+		
+	def __operation_list_to_row_list(self,operation_list):
+		if len(operation_list) == 1:
+			return operation_list
+		elif type(operation_list[0]) == list and type(operation_list[2]) == list:
+			return list.extend(self.__operation_list_to_row_list(operation_list[0])).extend(self.__operation_list_to_row_list(operation_list[2]))
+		elif type(operation_list[0]) == str and type(operation_list[2]) == list:
+			return list.append(operation_list[0]).extend(self.__operation_list_to_row_list(operation_list[2]))
+		elif type(operation_list[0]) == list and type(operation_list[2]) == str:
+			return list.extend(self.__operation_list_to_row_list(operation_list[0])).append(operation_list[2])
+		elif type(operation_list[0]) == str and type(operation_list[2]) == str:
+			return list.append(operation_list[0]).append(operation_list[2])
+
+	def __delete_empty_textnodes(self,parent):
+		for child in tuple(parent.childNodes):
 			if child.hasChildNodes():
-				self._delete_empty_textnodes(child)
+				self.__delete_empty_textnodes(child)
 			elif (child.nodeType in [	minidom.Node.CDATA_SECTION_NODE,
 							minidom.Node.COMMENT_NODE,
 							minidom.Node.TEXT_NODE]
-				) and child.data.strip() == '':
-				parent.removeChild(child)
-
-	def get_parameters(self):
-		parameters = []
-		# for self.dom.
-		return parameters
+				):
+				if child.data.strip() == '' or child.nodeType == minidom.Node.COMMENT_NODE:
+					parent.removeChild(child)
 
 # If this script is used as an script
 if __name__ == "__main__":
@@ -298,3 +364,4 @@ if __name__ == "__main__":
 		logfiles[log_file.name] = LogFile(log_file)
 
 	xmlfile = XMLFile(arguments.xml_config[0])
+	
