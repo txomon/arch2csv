@@ -82,18 +82,11 @@ class LogFile:
 						# We create a 0 value in the entry
 						self.dictionary[temp[0]]=[0]
 
-	def get_values(self, attribute):
-		""" (str) -> list of str
-		It returns a list of the values of the attribute in 
-		the file
-		"""
-		return self.dictionary[attribute]
-
 	def get_attributes(self):
-		""" () -> list of str
-		It returns the list of attributes in the log file
+		""" () -> dict(str : list of str)
+		It returns the dict contaning attributes as keys and parsed values as lists
 		"""
-		return self.dictionary.keys()
+		return self.dictionary.copy()
 
 class Operations:
 
@@ -259,14 +252,14 @@ class XMLFile:
 
 	def __check_xml_parameters(self,parameters):
 		if not parameters.hasChildNodes():
-			raise minidom.xml.dom.HierarchyRequestErr("There parameters node has no childs")
+			raise minidom.xml.dom.HierarchyRequestErr("There <parameters> node has no childs")
 		for parameter in parameters.childNodes:
 			if parameter.nodeType != minidom.Node.ELEMENT_NODE:
-				raise minidom.xml.dom.HierarchyRequestErr("parameters's child node wasn't an element node: "+child.__str__())
+				raise minidom.xml.dom.HierarchyRequestErr("<parameters>'s child node isn't an element node (<parameter>): "+child.__str__())
 			if parameter.nodeName != 'parameter':
-				raise minidom.xml.dom.HierarchyRequestErr("The parameters' child node is not a <parameter> node")
+				raise minidom.xml.dom.HierarchyRequestErr("A <parameters>'s child node is not a <parameter> node")
 			if not parameter.hasAttributes():
-				raise minidom.xml.dom.HierarchyRequestErr("The parameter node doesn't have any attribute (name required)")
+				raise minidom.xml.dom.HierarchyRequestErr("The <parameter> node doesn't have any attribute (name attribute is required)")
 			if not parameter.hasAttribute('name'):
 				raise minidom.xml.dom.HierarchyRequestErr("The parameter node doesn't have name attribute")
 			if parameter.hasChildNodes() and parameter.hasAttribute('row'):
