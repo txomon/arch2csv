@@ -38,7 +38,7 @@ class LogFile:
 		for line in logfile:
 			# Erase spaces and newline chars
 			line = line.rstrip("\n")
-			# If this is an empty string (was newline) go to next iteration
+			# If this is an empty string (was emptyline) go to next iteration
 			if not line: continue
 			# If this line is a comment
 			if line[0] == "#":
@@ -148,15 +148,16 @@ class XMLFile:
 	
 	<conf> <!-- Root tag -->
 		<parameters> <!-- The parameters we want to output -->
-			<parameter name="dag.total_time" row="total_time"/><!-- One of the parameters we want to output -->
+			<parameter name="dag.total_time" row="total_time"/><!-- The output parameter name is not same as the row name -->
 			<parameter name="softirq_persec">
 				<operation operator="/"
 					operand1="capture_stats.soft_interrupt_cycles"
 					operand2="dag.total_time" 
-				/>
+					/> <!-- If we don't want to have a parameter in the output, we just use it's row -->
 			</parameter>
-			<parameter name="dag.packets_per_second" row="dag.packets_per_second"/>
+			<parameter name="dag.packets_per_second"/>
 		</parameters>
+		<!-- Not supported yet -->
 		<graphs> <!-- The graphs we want to generate -->
 			<graph name="filename" xaxys="dag.packets_per_second"> <!-- One graph with its file name -->
 				<yaxys> <!-- columns to be in the y axis -->
@@ -172,46 +173,94 @@ class XMLFile:
 				</yaxys>
 			</graph>
 		</graphs>
+		<!-- Not supported yet -->
 	</conf>
-	
 	"""
 
 	def __init__(self, xml_file):
 		"""
-		Receives the xml_file and parses it, creating its internal
-		data structure. Also will make a sanitycheck on the xml file
+		Receives the xml_file and makes a sanitycheck on the xml file
 		"""
+
 		# We first parse the xml file
 		self.dom = minidom.parse(xml_file)
-		# Now we check that we have a valid xml, using the dtd defined
-		# in the docs, we initialize our self.dtd
-		self.dtd = self.__doc__.partition("<!DOCTYPE conf [")[2].partition("]>")[0].expandtabs(0)
-		# We check the xml
-		self._check_xml(xml_file)
-		# We now will 
+
+		# We check if the xml syntax fits into the dtd
+		self._check_xml_syntax(xml_file.name)
 		
-	def _check_xml(self,xml_file):
+		# Now that we know its alright, we check all the structure
+		# searching for something missing
+		self._check_xml()
+
+	def _check_xml_syntax(self,xml_file_name):
 		"""
 		Writes the dtd in /tmp/parser.dtd and checks received xml against it,
 		exiting from the program if check fails
 		"""
+
+		dtd = self.__doc__.partition("<!DOCTYPE conf [")[2].partition("]>")[0].expandtabs(0)
+
 		# Open the file in overwrite mode in a tmpfs
 		dtd_file = open("/tmp/parser.dtd","w")
+
 		# We write the dtd content
-		dtd_file.write(self.dtd)
+		dtd_file.write(dtd)
+
 		# And we close it
 		dtd_file.close()
-		
+
 		# We call xmllint to check against the dtd
-		if 0 != subprocess.call(["xmllint", "--noout", "--dtdvalid", "/tmp/parser.dtd",xml_file.name]):
+		if 0 != subprocess.call(["xmllint", "--noout", "--dtdvalid", "/tmp/parser.dtd",xml_file_name]):
 			# If it failed, we will suppose that the xml didn't pass the check
 			print("Use /tmp/parser.dtd to check your xml's syntax with:")
 			print("\txmllint --noout --dtdvalid /tmp/parser.dtd xmlfile")
 			# And we exit
 			exit()
 
-	def get_attributes(self):
-		return []
+	def _operations_list_to_string(self,operations):
+		""" (list | str) -> str
+		The function returns a plain string of the inner lists
+		
+		>>> _operations_list_to_string(['a','+',[['b','+','d'],'*','c']])
+		'(a+((b+d)*c))'
+		"""
+		if type(operations) == list:
+			return "("+ self._operations_list_to_string(operations[0]) + operations[1] + self._operations_list_to_string(operations[2]) + ")"
+		elif type(operations) == str:
+			return operations
+
+	def _check_xml(self):
+		# We first check that we just have one child node
+		self._delete_empty_textnodes(self.dom)
+		
+		#if self.dom.childNodes.length < 1:
+			#raise minidom.xml.dom.HierarchyRequestErr("There is no root tag")
+		#for childNode in self.dom.childNodes:
+			#if childNode.nodeType == 3 and (not childNode.data.strip()):
+				#self.dom.childNodes.remove(childNode)
+		## whoose name is conf
+		#if root_element.nodeName != 'conf':
+			#raise minidom.xml.dom.HierarchyRequestErr("Root tag is not <conf>")
+		## and is not empty
+		#if not root_element.hasChildNodes():
+			#raise minidom.xml.dom.HierarchyRequestErr("Root tag is empty")
+		## 
+		#if not 
+
+	def _delete_empty_textnodes(self,parent):
+		for child in parent.childNodes:
+			if child.hasChildNodes():
+				self._delete_empty_textnodes(child)
+			elif (child.nodeType in [	minidom.Node.CDATA_SECTION_NODE,
+							minidom.Node.COMMENT_NODE,
+							minidom.Node.TEXT_NODE]
+				) and child.data.strip() == '':
+				parent.removeChild(child)
+
+	def get_parameters(self):
+		parameters = []
+		# for self.dom.
+		return parameters
 
 # If this script is used as an script
 if __name__ == "__main__":
