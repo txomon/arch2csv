@@ -204,7 +204,7 @@ class XMLFile:
 		self._check_xml_syntax(xml_file.name)
 		
 		# Now that we know its alright, we check all the structure
-		# searching for something missing
+		# searching for something missing, and create the internal structure
 		self._check_xml()
 
 	def _check_xml_syntax(self,xml_file_name):
@@ -285,7 +285,7 @@ class XMLFile:
 				self.__add_row_to_internal(parameter.getAttribute('name'),[parameter.getAttribute('name')])
 
 	def __check_xml_operators(self,operation):
-		if 
+		pass
 
 	def __add_row_to_internal(self,name,rows):
 		if not (type(name) == str and type(rows) == list):
