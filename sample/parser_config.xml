@@ -1,14 +1,94 @@
 <conf>
 	<parameters>
-		<parameter name="dag.total_time"/>
-		<parameter name="dag.packets_per_second"/>
-		<parameter name="IF-MIB::ifOutUcastPkts.10106"/>
-		<parameter name="IF-MIB::ifOutNUcastPkts.10106"/>
-		<parameter name="IF-MIB::ifInUcastPkts.10112"/> 
-		<parameter name="IF-MIB::ifOutNUcastPkts.10112"/>
-		<parameter name="adviser.libpcap_recv"/>  
-		<parameter name="adviser.libpcap_drop"/>
-		<parameter name="adviser.libpcap_ifdrop"/>
-		<parameter name="adviser.adviser_recv"/>
+		<parameter name="dag.packets_per_second" />
+		<parameter name="soft_per_sec">
+			<operation operator="/"
+				operand1="capture_stats.soft_interrupt_times" 
+				operand2="dag.total_time"/>
+		</parameter>
+		<parameter name="throughput">
+			<operation operator="/"
+				operand1="ksensor.TOTAL.processed"
+				operand2="ksensor.nr_cpus"/>
+		</parameter>
+		<parameter name="soft_time_per_packet">
+			<operation operator="/"	
+				operand2="capture_stats.polling_packets" >
+				<operand1>
+					<operation name="soft_time"
+						operator="/" >
+						<operand1>
+							<operation operator="*"
+								operand1="capture_stats.polling_times"
+								operand2="capture_stats.polling_average"/>
+						</operand1>
+						<operand2>
+							<operation name="cpu_speed_ghz"
+								operator="/"
+								operand1="ksensor.cpu_speed"
+								operand2="1000"/>
+						</operand2>
+					</operation>
+				</operand1>
+			</operation>
+		</parameter>
+		<parameter name="CPU0_time_per_second">
+			<operation operator="/"
+				operand2="dag.total_time">
+				<operand1>
+					<operation operator="+"
+						operand="soft_time"
+						operand="sched_stats.1">
+						<operand>
+							<operation name="hard_time" 
+								operator="/"
+								operand2="cpu_speed_ghz">
+								<operand1>
+									<operation operator="*"
+										operand="capture_stats.hard_interrupt_average"
+										operand="capture_stats.hard_interrupt_times"/>
+								</operand1>
+							</operation>
+						</operand>
+					</operation>
+				</operand1>
+			</operation>
+		</parameter>
+		<parameter name="CPU1_time_per_second">
+			<operation operator="/"
+				operand1="sched_stats.2"
+				operand2="dag.total_time"/>
+		</parameter>
+		<parameter name="CPU0_time_per_packet">
+			<operation operator="/"
+				operand1="sched_stats.1"
+				operand2="ksensor.CPU0.processed" />
+		</parameter>
+		<parameter name="CPU1_time_per_packet">
+			<operation operator="/"
+				operand1="sched_stats.2"
+				operand2="ksensor.CPU1.processed" />
+		</parameter>
+		<parameter name="CPU0_processed">
+			<operation operator="/"
+				operand1="ksensor.CPU0.processed"
+				operand2="ksensor.TOTAL.processed"/>
+		</parameter>
+		<parameter name="out_for_budget" row="capture_stats.output_for_budget" />
+		<parameter name="capture_throughput">
+			<operation operator="/"
+				operand1="ksensor.TOTAL.captured"
+				operand2="dag.total_time" />
+		</parameter>
+		<parameter name="DMA_blocks">
+			<operation operator="/"
+				operand2="IF-MIB::ifOutUcastPkts.10108">
+				<operand1>
+					<operation operator="-"
+						operand1="IF-MIB::ifOutUcastPkts.10108"
+						operand2="capture_stats.polling_packets"/>
+				</operand1>
+			</operation>
+		</parameter>
 	</parameters>
 </conf>
