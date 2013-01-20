@@ -90,7 +90,7 @@ class LogFile:
 
 class Operations:
 
-	def operations_list_to_string(self,operations):
+	def _operations_list_to_string(self,operations):
 		""" (list | str) -> str
 		The function returns a plain string of the inner lists
 		
@@ -98,15 +98,31 @@ class Operations:
 		'(a+((b+d)*c))'
 		"""
 		if type(operations) == list:
-			if len(operations) == 3:
-				return "("+ self.operations_list_to_string(operations[0]) + operations[1] + self.operations_list_to_string(operations[2]) + ")"
-			else:
-				result = '('
-				for operation in operations:
-					 result += self.operations_list_to_string(operation)
-				return result + ')'
+			result = '('
+			for operation in operations:
+					result += self.operations_list_to_string(operation)
+			return result + ')'
 		elif type(operations) == str:
 			return operations
+
+	def operations_to_result(self, parameter_definition, dictionary_of_values):
+		""" (dict, dict) -> dict
+		Returns the result of doing the operations for each value in parameter_definition
+		with the values in dictionary_of_values in each index in a dictionary indexed
+		by the keys of parameter_definition.
+		
+		>>> operations_to_result({"parameterA": ["a","+","b","+","c"]
+						"parameterB": ["a", "*", "c"]},
+					{"a": [3,2,3,4],
+						"b": [2,1,3,4],
+						"c": [1,3,5,2]})
+		{"parameterA": [6,6,11,10], 
+			"parameterB": [3,6,15,8]}
+		"""
+		result = dict()
+		for parameter in parameter_definition:
+			#for index in 
+			pass
 
 class OutFile:
 	"""
@@ -117,11 +133,13 @@ class OutFile:
 		"""
 		Receives the name of the output file it will use
 		"""
+		self.outfile = outfile
 
 	def write_attributes(self, attributes):
 		"""
 		Prints the attributes with its values in the file
 		"""
+		
 
 class GraphicFile:
 	"""
@@ -344,8 +362,11 @@ class XMLFile:
 		for row in self.__operation_list_to_row_list(rows):
 			if ' ' in row:
 				raise minidom.xml.dom.HierarchyRequestErr("The row '"+row+"' is not valid because can't contain spaces")
-			if not row in self.rows:
-				self.rows.append(row)
+			try:
+				float(row)
+			except ValueError:
+				if not row in self.rows:
+					self.rows.append(row)
 		if not name in self.parameters.keys():
 			self.parameters[name] = rows
 		else:
