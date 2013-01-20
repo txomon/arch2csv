@@ -370,6 +370,8 @@ class XMLFile:
 		elif type(operation_list[0]) == str and type(operation_list[2]) == str:
 			result.append(operation_list[0])
 			result.append(operation_list[2])
+		else:
+			raise TypeError("operation_list is not a valid list")
 		return result
 
 	def __delete_empty_textnodes(self,parent):
