@@ -100,7 +100,7 @@ class Operations:
 		if type(operations) == list:
 			result = '('
 			for operation in operations:
-					result += self.operations_list_to_string(operation)
+					result += self._operations_list_to_string(operation)
 			return result + ')'
 		elif type(operations) == str:
 			return operations
@@ -111,18 +111,22 @@ class Operations:
 		with the values in dictionary_of_values in each index in a dictionary indexed
 		by the keys of parameter_definition.
 		
-		>>> operations_to_result({"parameterA": ["a","+","b","+","c"]
-						"parameterB": ["a", "*", "c"]},
-					{"a": [3,2,3,4],
-						"b": [2,1,3,4],
-						"c": [1,3,5,2]})
+		>>> operations_to_result({"parameterA": ["a","+","b","+","c"],"parameterB": ["a", "*", "c"]},{"a": [3,2,3,4],"b": [2,1,3,4],"c": [1,3,5,2]})
 		{"parameterA": [6,6,11,10], 
 			"parameterB": [3,6,15,8]}
 		"""
 		result = dict()
-		for parameter in parameter_definition:
-			#for index in 
-			pass
+		var_list = dict()
+		for index in range(len(max(dictionary_of_values.values()))):
+			if index == 0:
+				for parameter in parameter_definition:
+					result[parameter]=list()
+			for operands in dictionary_of_values:
+				var_list[operands] = dictionary_of_values[operands][index] 
+			for parameter in parameter_definition:
+				operations_string = self._operations_list_to_string(parameter_definition[parameter])
+				result[parameter].append(eval(operations_string, var_list))
+		return result
 
 class OutFile:
 	"""
