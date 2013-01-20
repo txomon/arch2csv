@@ -18,9 +18,10 @@
 					<operation name="soft_time"
 						operator="/" >
 						<operand1>
-							<operation operator="*"
-								operand1="capture_stats.polling_times"
-								operand2="capture_stats.polling_average"/>
+							<operation operator="*">
+								<operand row="capture_stats.polling_times" />
+								<operand row="capture_stats.polling_average"/>
+							</operation>
 						</operand1>
 						<operand2>
 							<operation name="cpu_speed_ghz"
@@ -36,17 +37,18 @@
 			<operation operator="/"
 				operand2="dag.total_time">
 				<operand1>
-					<operation operator="+"
-						operand="soft_time"
-						operand="sched_stats.1">
+					<operation operator="+">
+						<operand row="soft_time" />
+						<operand row="sched_stats.1"/>
 						<operand>
 							<operation name="hard_time" 
 								operator="/"
 								operand2="cpu_speed_ghz">
 								<operand1>
-									<operation operator="*"
-										operand="capture_stats.hard_interrupt_average"
-										operand="capture_stats.hard_interrupt_times"/>
+									<operation operator="*">
+										<operand row="capture_stats.hard_interrupt_average"/>
+										<operand row="capture_stats.hard_interrupt_times"/>
+									</operation>
 								</operand1>
 							</operation>
 						</operand>

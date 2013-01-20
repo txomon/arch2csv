@@ -98,7 +98,13 @@ class Operations:
 		'(a+((b+d)*c))'
 		"""
 		if type(operations) == list:
-			return "("+ self.operations_list_to_string(operations[0]) + operations[1] + self.operations_list_to_string(operations[2]) + ")"
+			if len(operations) == 3:
+				return "("+ self.operations_list_to_string(operations[0]) + operations[1] + self.operations_list_to_string(operations[2]) + ")"
+			else:
+				result = '('
+				for operation in operations:
+					 result += self.operations_list_to_string(operation)
+				return result + ')'
 		elif type(operations) == str:
 			return operations
 
@@ -137,12 +143,15 @@ class XMLFile:
 	<!ELEMENT parameter (#PCDATA|operation)*>
 	<!ATTLIST parameter name ID #REQUIRED>
 	<!ATTLIST parameter row CDATA #IMPLIED>
-	<!ELEMENT operation (operand1?,operand2?)>
+	<!ELEMENT operation ((operand1?,operand2?)|operand*)>
+	<!ATTLIST operation name CDATA #IMPLIED>
 	<!ATTLIST operation operator CDATA #REQUIRED>
 	<!ATTLIST operation operand1 CDATA #IMPLIED>
 	<!ATTLIST operation operand2 CDATA #IMPLIED>
 	<!ELEMENT operand1 (operation)>
 	<!ELEMENT operand2 (operation)>
+	<!ELEMENT operand (operation?)>
+	<!ATTLIST operand row CDATA #IMPLIED>
 	<!ELEMENT graphs (graph+)>
 	<!ELEMENT graph (xaxys?,yaxys?)>
 	<!ATTLIST graph name ID #REQUIRED>
@@ -171,8 +180,8 @@ class XMLFile:
 						operand1="capture_stats.soft_interrupt_cycles">
 						<operand2>
 							<operation operator="*"
-								operand1="dag.total_time"
-								operand2="1"
+								operand="dag.total_time"
+								operand="1000"
 							/>
 						</operand2>
 					</operation>
@@ -244,7 +253,7 @@ class XMLFile:
 			raise minidom.xml.dom.HierarchyRequestErr("There are too many childs in conf node")
 		for child in node.childNodes:
 			if child.nodeType != minidom.Node.ELEMENT_NODE:
-				raise minidom.xml.dom.HierarchyRequestErr("conf's child node wasn't an element node: "+child.__str__())
+				raise minidom.xml.dom.HierarchyRequestErr("conf's child node wasn't an element node:",child)
 			elif child.nodeName == 'parameters':
 				self.__check_xml_parameters(child)
 			elif child.nodeName == 'graphs':
@@ -269,16 +278,63 @@ class XMLFile:
 			elif parameter.hasChildNodes():
 				if len(parameter.childNodes) != 1:
 					raise minidom.xml.dom.HierarchyRequestErr("The parameter node must have just 1 <operation> child or a row attribute")
-				elif parameter.childNodes[0].nodeName == 'operation':
+				else:
 					rows = self.__check_xml_operators(parameter.childNodes[0])
 					self.__add_row_to_internal(parameter.getAttribute('name'),rows)
-				else:
-					raise minidom.xml.dom.HierarchyRequestErr("The parameter node must have just 1 <operation> child or a row attribute")
 			else:
 				self.__add_row_to_internal(parameter.getAttribute('name'),[parameter.getAttribute('name')])
 
 	def __check_xml_operators(self,operation):
-		pass
+		if operation.nodeName != 'operation':
+			raise minidom.xml.dom.HierarchyRequestErr("There must be just 1 node <operation>")
+		if not operation.hasAttribute('operator'):
+			raise minidom.xml.dom.HierarchyRequestErr("operator attribute is needed")
+		operator = operation.getAttribute('operator')
+		if operator in '/-':
+			if operation.hasAttribute('operand'):
+				raise minidom.xml.dom.HierarchyRequestErr("operators '/' and '-' don't support operand element")
+			if operation.hasAttribute('operand1'):
+				operand1 = operation.getAttribute('operand1')
+			if operation.hasAttribute('operand2'):
+				operand2 = operation.getAttribute('operand2')
+			for operand in operation.childNodes:
+				if operand.nodeName == 'operand1':
+					try:
+						operand1
+					except NameError:
+						operand1 = self.__check_xml_operators(operand.childNodes[0])
+					else:
+						raise minidom.xml.dom.HierarchyRequestErr("operand1 is already defined, xml syntax error")
+				elif operand.nodeName == 'operand2':
+					try:
+						operand2
+					except NameError:
+						operand2 = self.__check_xml_operators(operand.childNodes[0])
+					else:
+						raise minidom.xml.dom.HierarchyRequestErr("operand2 is already defined, xml syntax error")
+				else:
+					raise minidom.xml.dom.HierarchyRequestErr(operand.nodeName, "is not expected to be in '/' or '-' operation node")
+			try:
+				operand1
+				operand2
+			except NameError:
+				raise minidom.xml.dom.HierarchyRequestErr("Some operand is not defined, check for operand1 and operand2")
+			return [operand1, operator, operand2]
+		elif operator in '+*':
+			if operation.hasAttribute('operand1') or operation.hasAttribute('operand2'):
+				raise minidom.xml.dom.HierarchyRequestErr("operators '/' and '-' don't support operand element")
+			if not operation.hasChildNodes():
+				raise minidom.xml.dom.HierarchyRequestErr("<operand> nodes are needed for this type of operation")
+			result = []
+			for operand in operation.childNodes:
+				if operand.nodeName != 'operand':
+					raise minidom.xml.dom.HierarchyRequestErr(operand.nodeName, "is not expected to be in '*' or '+' operation node")
+				if operand.hasAttribute('row'):
+					result.extend([operand.getAttribute('row'), operator])
+				else:
+					result.extend([self.__check_xml_operators(operand.childNodes[0]),operator])
+			result.pop()
+			return result
 
 	def __add_row_to_internal(self,name,rows):
 		if not (type(name) == str and type(rows) == list):
@@ -288,27 +344,33 @@ class XMLFile:
 		for row in self.__operation_list_to_row_list(rows):
 			if ' ' in row:
 				raise minidom.xml.dom.HierarchyRequestErr("The row '"+row+"' is not valid because can't contain spaces")
-			if not self.rows.__contains__(row):
+			if not row in self.rows:
 				self.rows.append(row)
 		if not name in self.parameters.keys():
 			self.parameters[name] = rows
 		else:
 			for row in rows:
-				if not self.parameters[name].__contains__(row):
+				if not row in self.parameters[name]:
 					raise minidom.xml.dom.HierarchyRequestErr("The name '"+name+"' has different "
 					"data definitions\n("+rows.__str__()+")\n VS \n("+self.parameters[name].__str__()+")")
-		
+
 	def __operation_list_to_row_list(self,operation_list):
+		result = list()
 		if len(operation_list) == 1:
 			return operation_list
 		elif type(operation_list[0]) == list and type(operation_list[2]) == list:
-			return list.extend(self.__operation_list_to_row_list(operation_list[0])).extend(self.__operation_list_to_row_list(operation_list[2]))
+			result.extend(self.__operation_list_to_row_list(operation_list[0]))
+			result.extend(self.__operation_list_to_row_list(operation_list[2]))
 		elif type(operation_list[0]) == str and type(operation_list[2]) == list:
-			return list.append(operation_list[0]).extend(self.__operation_list_to_row_list(operation_list[2]))
+			result.append(operation_list[0])
+			result.extend(self.__operation_list_to_row_list(operation_list[2]))
 		elif type(operation_list[0]) == list and type(operation_list[2]) == str:
-			return list.extend(self.__operation_list_to_row_list(operation_list[0])).append(operation_list[2])
+			result.extend(self.__operation_list_to_row_list(operation_list[0]))
+			result.append(operation_list[2])
 		elif type(operation_list[0]) == str and type(operation_list[2]) == str:
-			return list.append(operation_list[0]).append(operation_list[2])
+			result.append(operation_list[0])
+			result.append(operation_list[2])
+		return result
 
 	def __delete_empty_textnodes(self,parent):
 		for child in tuple(parent.childNodes):
