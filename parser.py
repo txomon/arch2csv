@@ -358,20 +358,11 @@ class XMLFile:
 		result = list()
 		if len(operation_list) == 1:
 			return operation_list
-		elif type(operation_list[0]) == list and type(operation_list[2]) == list:
-			result.extend(self.__operation_list_to_row_list(operation_list[0]))
-			result.extend(self.__operation_list_to_row_list(operation_list[2]))
-		elif type(operation_list[0]) == str and type(operation_list[2]) == list:
-			result.append(operation_list[0])
-			result.extend(self.__operation_list_to_row_list(operation_list[2]))
-		elif type(operation_list[0]) == list and type(operation_list[2]) == str:
-			result.extend(self.__operation_list_to_row_list(operation_list[0]))
-			result.append(operation_list[2])
-		elif type(operation_list[0]) == str and type(operation_list[2]) == str:
-			result.append(operation_list[0])
-			result.append(operation_list[2])
-		else:
-			raise TypeError("operation_list is not a valid list")
+		for index in range(0,len(operation_list),2):
+			if type(operation_list[index]) == list:
+				result.extend(self.__operation_list_to_row_list(operation_list[index]))
+			elif type(operation_list[index]) == str:
+				result.append(operation_list[index])
 		return result
 
 	def __delete_empty_textnodes(self,parent):
