@@ -83,14 +83,22 @@ class LogFile:
 						self.dictionary[temp[0]]=[0]
 
 	def get_attributes(self):
-		""" () -> dict(str : list of str)
+		""" () -> dict(str: list of str)
 		It returns the dict contaning attributes as keys and parsed values as lists
 		"""
 		return self.dictionary.copy()
 
 class Operations:
-
-	def _operations_list_to_string(self,operations):
+	
+	def _make_identifier(receive):
+		bad_strings = ".:-"
+		good_strings = "_"*len(bad_strings)
+		table=str.maketrans(bad_strings,good_strings)
+		if receive == "-":
+			return receive
+		return receive.translate(table)
+		
+	def _operations_list_to_string(operations):
 		""" (list | str) -> str
 		The function returns a plain string of the inner lists
 		
@@ -100,12 +108,12 @@ class Operations:
 		if type(operations) == list:
 			result = '('
 			for operation in operations:
-					result += self._operations_list_to_string(operation)
+					result += Operations._operations_list_to_string(operation)
 			return result + ')'
 		elif type(operations) == str:
-			return operations
+			return Operations._make_identifier(operations)
 
-	def operations_to_result(self, parameter_definition, dictionary_of_values):
+	def operations_to_result(parameter_definition, dictionary_of_values):
 		""" (dict, dict) -> dict
 		Returns the result of doing the operations for each value in parameter_definition
 		with the values in dictionary_of_values in each index in a dictionary indexed
@@ -117,15 +125,23 @@ class Operations:
 		"""
 		result = dict()
 		var_list = dict()
-		for index in range(len(max(dictionary_of_values.values()))):
+		count = 0
+		for index in values:
+			if len(values[index]) > count:
+				count = len(values[index])
+		for index in range(count):
 			if index == 0:
 				for parameter in parameter_definition:
 					result[parameter]=list()
-			for operands in dictionary_of_values:
-				var_list[operands] = dictionary_of_values[operands][index] 
+			for operand in dictionary_of_values:
+				identifier_operand = Operations._make_identifier(operand)
+				try:
+					var_list[identifier_operand] = float(dictionary_of_values[operand][index])
+				except: continue
+
 			for parameter in parameter_definition:
-				operations_string = self._operations_list_to_string(parameter_definition[parameter])
-				result[parameter].append(eval(operations_string, var_list))
+				operations_string = Operations._operations_list_to_string(parameter_definition[parameter])
+				result[parameter].append(eval(operations_string, None, var_list))
 		return result
 
 class OutFile:
@@ -139,11 +155,22 @@ class OutFile:
 		"""
 		self.outfile = outfile
 
-	def write_attributes(self, attributes):
+	def columns_output(self, attributes, sep=" "):
 		"""
-		Prints the attributes with its values in the file
+		Prints the attributes with its values in the file in columns
 		"""
-		
+		count = 0
+		for index in attributes:
+			if len(attributes[index]) > count:
+				count = len(attributes[index])
+		for parameter in attributes:
+			print(parameter, file=self.outfile, end=sep)
+		print("\n", file=self.outfile, end="")
+		for index in range(count):
+			for parameter in attributes:
+				print(attributes[parameter][index], file=self.outfile, end=sep)
+			print("\n", file=self.outfile, end="")
+		self.outfile.close()
 
 class GraphicFile:
 	"""
@@ -219,8 +246,9 @@ class XMLFile:
 		Receives the xml_file and makes a sanitycheck on the xml file
 		"""
 
-		self.rows = []
-		self.parameters = {}
+		self.rows = list()
+		self.parameters = dict()
+		self.named_operations = dict()
 		# We first parse the xml file
 		self.dom = minidom.parse(xml_file)
 
@@ -230,6 +258,13 @@ class XMLFile:
 		# Now that we know its alright, we check all the structure
 		# searching for something missing, and create the internal structure
 		self._check_xml()
+		xml_file.close()
+
+	def get_parameters(self):
+		return self.parameters.copy()
+
+	def get_rows(self):
+		return list(self.rows)
 
 	def _check_xml_syntax(self,xml_file_name):
 		"""
@@ -312,13 +347,19 @@ class XMLFile:
 		if not operation.hasAttribute('operator'):
 			raise minidom.xml.dom.HierarchyRequestErr("operator attribute is needed")
 		operator = operation.getAttribute('operator')
+		result = list()
 		if operator in '/-':
 			if operation.hasAttribute('operand'):
 				raise minidom.xml.dom.HierarchyRequestErr("operators '/' and '-' don't support operand element")
 			if operation.hasAttribute('operand1'):
 				operand1 = operation.getAttribute('operand1')
+				if operand1 in self.named_operations.keys():
+					operand1 = self.named_operations[operand1]
 			if operation.hasAttribute('operand2'):
 				operand2 = operation.getAttribute('operand2')
+				if operand2 in self.named_operations.keys():
+					operand2 = self.named_operations[operand2]
+					
 			for operand in operation.childNodes:
 				if operand.nodeName == 'operand1':
 					try:
@@ -341,22 +382,27 @@ class XMLFile:
 				operand2
 			except NameError:
 				raise minidom.xml.dom.HierarchyRequestErr("Some operand is not defined, check for operand1 and operand2")
-			return [operand1, operator, operand2]
+			result = [operand1, operator, operand2]
 		elif operator in '+*':
 			if operation.hasAttribute('operand1') or operation.hasAttribute('operand2'):
 				raise minidom.xml.dom.HierarchyRequestErr("operators '/' and '-' don't support operand element")
 			if not operation.hasChildNodes():
 				raise minidom.xml.dom.HierarchyRequestErr("<operand> nodes are needed for this type of operation")
-			result = []
 			for operand in operation.childNodes:
 				if operand.nodeName != 'operand':
 					raise minidom.xml.dom.HierarchyRequestErr(operand.nodeName, "is not expected to be in '*' or '+' operation node")
 				if operand.hasAttribute('row'):
-					result.extend([operand.getAttribute('row'), operator])
+					row_name = operand.getAttribute('row')
+					if  row_name in self.named_operations.keys():
+						result.extend([self.named_operations[row_name], operator])
+					else:
+						result.extend([operand.getAttribute('row'), operator])
 				else:
 					result.extend([self.__check_xml_operators(operand.childNodes[0]),operator])
 			result.pop()
-			return result
+		if operation.hasAttribute('name'):
+			self.named_operations[operation.getAttribute('name')] = result
+		return result
 
 	def __add_row_to_internal(self,name,rows):
 		if not (type(name) == str and type(rows) == list):
@@ -432,9 +478,20 @@ if __name__ == "__main__":
 	
 	###
 	## Start initializing the LogFile classes
-	logfiles={}
-	for log_file in arguments.log_file:
-		logfiles[log_file.name] = LogFile(log_file)
-
 	xmlfile = XMLFile(arguments.xml_config[0])
-	
+	logfiles={}
+	rows_values = {}
+	for log_file_descriptor in arguments.log_file:
+		logfile = LogFile(log_file_descriptor)
+		values = logfile.get_attributes()
+		parameters = xmlfile.get_parameters()
+		rows = xmlfile.get_rows()
+		for log_row in dict(values):
+			if log_row in rows:
+				continue
+			for row in rows:
+				if row != log_row and row in log_row: values[row]=values[log_row]
+		result = Operations.operations_to_result(parameters, values)
+		out_file = OutFile(open(log_file_descriptor.name + ".parameters", mode="w"))
+		out_file.columns_output(result)
+
