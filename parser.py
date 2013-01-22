@@ -168,7 +168,7 @@ class OutFile:
 		print("\n", file=self.outfile, end="")
 		for index in range(count):
 			for parameter in attributes:
-				print(attributes[parameter][index], file=self.outfile, end=sep)
+				print('{0:.15f}'.format(float(attributes[parameter][index])), file=self.outfile, end=sep)
 			print("\n", file=self.outfile, end="")
 		self.outfile.close()
 
